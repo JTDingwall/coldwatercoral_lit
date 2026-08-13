@@ -5,9 +5,9 @@ Shared workspace for production literature searches.
 Folders:
 - `wos/`
 - `openalex/`
-- `grey_literature/`
+- `semantic_scholar/`
+- `grey/`
 - `documents/`
-- `ledger/`
 
 Files:
 - `benchmark_sources.csv`
@@ -15,5 +15,7 @@ Files:
 - `wos_production_queries.md`
 - `openalex_production_queries.md`
 - `run_openalex.py`
+- `semantic_scholar_queries.md`
+- `run_semantic_scholar_searches.py`
 
 Use the GitHub issue `Step 4 production search tracker` as the sequenced checklist.

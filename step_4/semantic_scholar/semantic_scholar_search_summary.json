@@ -1,0 +1,72 @@
+{
+  "system": "Semantic Scholar Academic Graph API",
+  "endpoint": "https://api.semanticscholar.org/graph/v1/paper/search/bulk",
+  "date_searched": "2026-08-13",
+  "notes": "No date or publication-type filters. Results are retained separately by query family; no cross-family screening or deduplication.",
+  "searches": [
+    {
+      "query_id": "SS_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "query": "(coral* | octocoral* | gorgonian* | \"sea pen*\" | pennatula* | scleractinian* | antipatharian* | \"black coral*\" | Porifera | poriferan* | demosponge* | hexactinellid* | \"glass sponge*\" | \"deep-sea sponge*\" | \"deep sea sponge*\" | \"cold-water sponge*\" | \"cold water sponge*\") + (\"suspended sediment*\" | \"suspended solid*\" | \"suspended particle*\" | turbidity | resuspension | \"particle concentration*\" | \"sediment plume*\")",
+      "reported_total": 2143,
+      "retrieved_count": 2143,
+      "output_file": "step_4/semantic_scholar/SS_SED_SUSPENDED_01.csv"
+    },
+    {
+      "query_id": "SS_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "query": "(coral* | octocoral* | gorgonian* | \"sea pen*\" | pennatula* | scleractinian* | antipatharian* | \"black coral*\" | Porifera | poriferan* | demosponge* | hexactinellid* | \"glass sponge*\" | \"deep-sea sponge*\" | \"deep sea sponge*\" | \"cold-water sponge*\" | \"cold water sponge*\") + (\"sediment deposition\" | \"sediment accumulation\" | \"sediment load*\" | burial | smother* | \"sediment cover*\" | \"sediment thickness\" | \"deposition rate*\")",
+      "reported_total": 1490,
+      "retrieved_count": 1490,
+      "output_file": "step_4/semantic_scholar/SS_SED_DEPOSITION_01.csv"
+    },
+    {
+      "query_id": "SS_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "query": "(coral* | octocoral* | gorgonian* | \"sea pen*\" | pennatula* | scleractinian* | antipatharian* | \"black coral*\" | Porifera | poriferan* | demosponge* | hexactinellid* | \"glass sponge*\" | \"deep-sea sponge*\" | \"deep sea sponge*\" | \"cold-water sponge*\" | \"cold water sponge*\") + (\"drill cutting*\" | \"drilling mud*\" | \"drilling fluid*\" | \"drilling discharge*\" | \"drilling waste*\" | \"cuttings pile*\" | (\"offshore drilling\" + (sediment* | bentonite | barite | particulate* | discharge*)))",
+      "reported_total": 72,
+      "retrieved_count": 72,
+      "output_file": "step_4/semantic_scholar/SS_SED_DRILLING_01.csv"
+    },
+    {
+      "query_id": "SS_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "query": "(coral* | octocoral* | gorgonian* | \"sea pen*\" | pennatula* | scleractinian* | antipatharian* | \"black coral*\" | Porifera | poriferan* | demosponge* | hexactinellid* | \"glass sponge*\" | \"deep-sea sponge*\" | \"deep sea sponge*\" | \"cold-water sponge*\" | \"cold water sponge*\") + (dredg* | \"dredge plume*\" | \"dredging plume*\" | resuspension | \"resuspended sediment*\" | \"sediment plume*\" | \"spoil disposal\" | \"dredged material\")",
+      "reported_total": 1064,
+      "retrieved_count": 1064,
+      "output_file": "step_4/semantic_scholar/SS_SED_DREDGING_01.csv"
+    },
+    {
+      "query_id": "SS_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "query": "(coral* | octocoral* | gorgonian* | \"sea pen*\" | pennatula* | scleractinian* | antipatharian* | \"black coral*\" | Porifera | poriferan* | demosponge* | hexactinellid* | \"glass sponge*\" | \"deep-sea sponge*\" | \"deep sea sponge*\" | \"cold-water sponge*\" | \"cold water sponge*\") + (\"mine tailing*\" | \"mining tailing*\" | \"submarine tailing*\" | \"deep-sea mining\" | \"deep sea mining\" | \"seafloor massive sulphide*\" | \"seafloor massive sulfide*\" | \"mining plume*\" | \"marine disposal\" | \"particulate waste*\")",
+      "reported_total": 75,
+      "retrieved_count": 75,
+      "output_file": "step_4/semantic_scholar/SS_SED_TAILINGS_01.csv"
+    },
+    {
+      "query_id": "SS_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "query": "(coral* | octocoral* | gorgonian* | \"sea pen*\" | pennatula* | scleractinian* | antipatharian* | \"black coral*\") + (sediment* | turbidity | \"suspended solid*\" | \"suspended particle*\" | burial | smother* | bentonite | barite | \"drill cutting*\") + (mucus | mucous | mucociliary | \"sediment rejection\" | \"sediment clearance\" | \"particle rejection\" | feeding | \"food capture\" | \"prey capture\" | \"polyp activity\" | \"tentacle activity\")",
+      "reported_total": 715,
+      "retrieved_count": 715,
+      "output_file": "step_4/semantic_scholar/SS_MECH_FEEDING_MUCUS_CORAL_01.csv"
+    },
+    {
+      "query_id": "SS_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "query": "(Porifera | poriferan* | demosponge* | hexactinellid* | \"glass sponge*\" | \"deep-sea sponge*\" | \"deep sea sponge*\" | \"cold-water sponge*\" | \"cold water sponge*\") + (sediment* | turbidity | \"suspended solid*\" | \"suspended particle*\" | bentonite | barite | \"drill cutting*\") + (pumping | filtration | \"feeding current*\" | \"food capture\" | clogging | \"particle clearance\" | \"clearance rate*\")",
+      "reported_total": 20,
+      "retrieved_count": 20,
+      "output_file": "step_4/semantic_scholar/SS_MECH_FEEDING_PUMPING_SPONGE_01.csv"
+    },
+    {
+      "query_id": "SS_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "query": "(coral* | octocoral* | gorgonian* | \"sea pen*\" | pennatula* | scleractinian* | antipatharian* | \"black coral*\" | Porifera | poriferan* | demosponge* | hexactinellid* | \"glass sponge*\" | \"deep-sea sponge*\" | \"deep sea sponge*\" | \"cold-water sponge*\" | \"cold water sponge*\") + (\"suspended sediment*\" | \"sediment deposition\" | \"sediment accumulation\" | \"sediment load*\" | turbidity | burial | smother* | \"drill cutting*\" | \"drilling mud*\" | \"drilling discharge*\" | \"resuspended sediment*\" | \"sediment plume*\") + (threshold* | tolerance | sensitiv* | \"dose-response\" | \"dose response\" | \"exposure-response\" | \"exposure response\" | recovery | mortality | survival | \"chronic exposure\" | \"acute exposure\")",
+      "reported_total": 794,
+      "retrieved_count": 794,
+      "output_file": "step_4/semantic_scholar/SS_RESP_THRESHOLD_RECOVERY_01.csv"
+    }
+  ]
+}
