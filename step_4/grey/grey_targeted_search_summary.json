@@ -1,0 +1,1834 @@
+{
+  "system": "Tavily Search API",
+  "date_searched": "2026-08-13",
+  "phase": "targeted",
+  "search_depth": "basic",
+  "max_results_per_query": 20,
+  "notes": "No date cutoff. Results are retained by query with no relevance screening or cross-query deduplication.",
+  "searches": [
+    {
+      "query_id": "GL_DFO_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "DFO",
+      "target_name": "Fisheries and Oceans Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "dfo-mpo.gc.ca",
+        "waves-vagues.dfo-mpo.gc.ca",
+        "publications.gc.ca"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.17,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_DFO_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "DFO",
+      "target_name": "Fisheries and Oceans Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "dfo-mpo.gc.ca",
+        "waves-vagues.dfo-mpo.gc.ca",
+        "publications.gc.ca"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.14,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_DFO_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "DFO",
+      "target_name": "Fisheries and Oceans Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "dfo-mpo.gc.ca",
+        "waves-vagues.dfo-mpo.gc.ca",
+        "publications.gc.ca"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 4.33,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_DFO_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "DFO",
+      "target_name": "Fisheries and Oceans Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "dfo-mpo.gc.ca",
+        "waves-vagues.dfo-mpo.gc.ca",
+        "publications.gc.ca"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 4.52,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_DFO_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "DFO",
+      "target_name": "Fisheries and Oceans Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "dfo-mpo.gc.ca",
+        "waves-vagues.dfo-mpo.gc.ca",
+        "publications.gc.ca"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 3.98,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_DFO_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "DFO",
+      "target_name": "Fisheries and Oceans Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "dfo-mpo.gc.ca",
+        "waves-vagues.dfo-mpo.gc.ca",
+        "publications.gc.ca"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.19,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_DFO_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "DFO",
+      "target_name": "Fisheries and Oceans Canada",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "dfo-mpo.gc.ca",
+        "waves-vagues.dfo-mpo.gc.ca",
+        "publications.gc.ca"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.26,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_DFO_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "DFO",
+      "target_name": "Fisheries and Oceans Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "dfo-mpo.gc.ca",
+        "waves-vagues.dfo-mpo.gc.ca",
+        "publications.gc.ca"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.69,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_CNLOER_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "CNLOER",
+      "target_name": "Canada-Newfoundland and Labrador Offshore Energy Regulator",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "cnloer.ca",
+        "c-nlopb.ca"
+      ],
+      "result_count": 16,
+      "response_time_seconds": 5.58,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_CNLOER_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "CNLOER",
+      "target_name": "Canada-Newfoundland and Labrador Offshore Energy Regulator",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "cnloer.ca",
+        "c-nlopb.ca"
+      ],
+      "result_count": 17,
+      "response_time_seconds": 5.21,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_CNLOER_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "CNLOER",
+      "target_name": "Canada-Newfoundland and Labrador Offshore Energy Regulator",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "cnloer.ca",
+        "c-nlopb.ca"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.96,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_CNLOER_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "CNLOER",
+      "target_name": "Canada-Newfoundland and Labrador Offshore Energy Regulator",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "cnloer.ca",
+        "c-nlopb.ca"
+      ],
+      "result_count": 17,
+      "response_time_seconds": 10.18,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_CNLOER_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "CNLOER",
+      "target_name": "Canada-Newfoundland and Labrador Offshore Energy Regulator",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "cnloer.ca",
+        "c-nlopb.ca"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.68,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_CNLOER_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "CNLOER",
+      "target_name": "Canada-Newfoundland and Labrador Offshore Energy Regulator",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "cnloer.ca",
+        "c-nlopb.ca"
+      ],
+      "result_count": 17,
+      "response_time_seconds": 4.24,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_CNLOER_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "CNLOER",
+      "target_name": "Canada-Newfoundland and Labrador Offshore Energy Regulator",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "cnloer.ca",
+        "c-nlopb.ca"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.37,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_CNLOER_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "CNLOER",
+      "target_name": "Canada-Newfoundland and Labrador Offshore Energy Regulator",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "cnloer.ca",
+        "c-nlopb.ca"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 5.84,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_IAAC_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "IAAC",
+      "target_name": "Impact Assessment Agency of Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "iaac-aeic.gc.ca"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.84,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_IAAC_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "IAAC",
+      "target_name": "Impact Assessment Agency of Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "iaac-aeic.gc.ca"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 4.58,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_IAAC_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "IAAC",
+      "target_name": "Impact Assessment Agency of Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "iaac-aeic.gc.ca"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 4.25,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_IAAC_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "IAAC",
+      "target_name": "Impact Assessment Agency of Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "iaac-aeic.gc.ca"
+      ],
+      "result_count": 17,
+      "response_time_seconds": 7.99,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_IAAC_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "IAAC",
+      "target_name": "Impact Assessment Agency of Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "iaac-aeic.gc.ca"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 4.69,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_IAAC_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "IAAC",
+      "target_name": "Impact Assessment Agency of Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "iaac-aeic.gc.ca"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.76,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_IAAC_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "IAAC",
+      "target_name": "Impact Assessment Agency of Canada",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "iaac-aeic.gc.ca"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.9,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_IAAC_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "IAAC",
+      "target_name": "Impact Assessment Agency of Canada",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "iaac-aeic.gc.ca"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.87,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NORWAY_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "NORWAY",
+      "target_name": "Norwegian regulators and marine research repositories",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "regjeringen.no",
+        "miljodirektoratet.no",
+        "havforskningsinstituttet.no",
+        "hi.no",
+        "niva.no",
+        "ntnuopen.ntnu.no",
+        "munin.uit.no"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.66,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NORWAY_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "NORWAY",
+      "target_name": "Norwegian regulators and marine research repositories",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "regjeringen.no",
+        "miljodirektoratet.no",
+        "havforskningsinstituttet.no",
+        "hi.no",
+        "niva.no",
+        "ntnuopen.ntnu.no",
+        "munin.uit.no"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 3.66,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NORWAY_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "NORWAY",
+      "target_name": "Norwegian regulators and marine research repositories",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "regjeringen.no",
+        "miljodirektoratet.no",
+        "havforskningsinstituttet.no",
+        "hi.no",
+        "niva.no",
+        "ntnuopen.ntnu.no",
+        "munin.uit.no"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 5.39,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NORWAY_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "NORWAY",
+      "target_name": "Norwegian regulators and marine research repositories",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "regjeringen.no",
+        "miljodirektoratet.no",
+        "havforskningsinstituttet.no",
+        "hi.no",
+        "niva.no",
+        "ntnuopen.ntnu.no",
+        "munin.uit.no"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 5.38,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NORWAY_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "NORWAY",
+      "target_name": "Norwegian regulators and marine research repositories",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "regjeringen.no",
+        "miljodirektoratet.no",
+        "havforskningsinstituttet.no",
+        "hi.no",
+        "niva.no",
+        "ntnuopen.ntnu.no",
+        "munin.uit.no"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.24,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NORWAY_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "NORWAY",
+      "target_name": "Norwegian regulators and marine research repositories",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "regjeringen.no",
+        "miljodirektoratet.no",
+        "havforskningsinstituttet.no",
+        "hi.no",
+        "niva.no",
+        "ntnuopen.ntnu.no",
+        "munin.uit.no"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.46,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NORWAY_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "NORWAY",
+      "target_name": "Norwegian regulators and marine research repositories",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "regjeringen.no",
+        "miljodirektoratet.no",
+        "havforskningsinstituttet.no",
+        "hi.no",
+        "niva.no",
+        "ntnuopen.ntnu.no",
+        "munin.uit.no"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.88,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NORWAY_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "NORWAY",
+      "target_name": "Norwegian regulators and marine research repositories",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "regjeringen.no",
+        "miljodirektoratet.no",
+        "havforskningsinstituttet.no",
+        "hi.no",
+        "niva.no",
+        "ntnuopen.ntnu.no",
+        "munin.uit.no"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 5.41,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OSPAR_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "OSPAR",
+      "target_name": "OSPAR Commission",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ospar.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 5.5,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OSPAR_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "OSPAR",
+      "target_name": "OSPAR Commission",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ospar.org"
+      ],
+      "result_count": 18,
+      "response_time_seconds": 3.63,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OSPAR_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "OSPAR",
+      "target_name": "OSPAR Commission",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ospar.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.37,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OSPAR_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "OSPAR",
+      "target_name": "OSPAR Commission",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ospar.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 4.71,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OSPAR_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "OSPAR",
+      "target_name": "OSPAR Commission",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ospar.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.86,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OSPAR_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "OSPAR",
+      "target_name": "OSPAR Commission",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ospar.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.05,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OSPAR_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "OSPAR",
+      "target_name": "OSPAR Commission",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ospar.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.33,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OSPAR_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "OSPAR",
+      "target_name": "OSPAR Commission",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ospar.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.76,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ICES_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "ICES",
+      "target_name": "International Council for the Exploration of the Sea",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ices.dk"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 5.45,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ICES_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "ICES",
+      "target_name": "International Council for the Exploration of the Sea",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ices.dk"
+      ],
+      "result_count": 0,
+      "response_time_seconds": 14.92,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ICES_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "ICES",
+      "target_name": "International Council for the Exploration of the Sea",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ices.dk"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 12.19,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ICES_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "ICES",
+      "target_name": "International Council for the Exploration of the Sea",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ices.dk"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.75,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ICES_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "ICES",
+      "target_name": "International Council for the Exploration of the Sea",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ices.dk"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 5.31,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ICES_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "ICES",
+      "target_name": "International Council for the Exploration of the Sea",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ices.dk"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 4.27,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ICES_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "ICES",
+      "target_name": "International Council for the Exploration of the Sea",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ices.dk"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.05,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ICES_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "ICES",
+      "target_name": "International Council for the Exploration of the Sea",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "ices.dk"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 5.64,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NOAA_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "NOAA",
+      "target_name": "US National Oceanic and Atmospheric Administration",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fisheries.noaa.gov",
+        "repository.library.noaa.gov",
+        "ncei.noaa.gov"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.92,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NOAA_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "NOAA",
+      "target_name": "US National Oceanic and Atmospheric Administration",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fisheries.noaa.gov",
+        "repository.library.noaa.gov",
+        "ncei.noaa.gov"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.1,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NOAA_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "NOAA",
+      "target_name": "US National Oceanic and Atmospheric Administration",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fisheries.noaa.gov",
+        "repository.library.noaa.gov",
+        "ncei.noaa.gov"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 4.09,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NOAA_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "NOAA",
+      "target_name": "US National Oceanic and Atmospheric Administration",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fisheries.noaa.gov",
+        "repository.library.noaa.gov",
+        "ncei.noaa.gov"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.88,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NOAA_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "NOAA",
+      "target_name": "US National Oceanic and Atmospheric Administration",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fisheries.noaa.gov",
+        "repository.library.noaa.gov",
+        "ncei.noaa.gov"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.89,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NOAA_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "NOAA",
+      "target_name": "US National Oceanic and Atmospheric Administration",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fisheries.noaa.gov",
+        "repository.library.noaa.gov",
+        "ncei.noaa.gov"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.94,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NOAA_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "NOAA",
+      "target_name": "US National Oceanic and Atmospheric Administration",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fisheries.noaa.gov",
+        "repository.library.noaa.gov",
+        "ncei.noaa.gov"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.74,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_NOAA_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "NOAA",
+      "target_name": "US National Oceanic and Atmospheric Administration",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fisheries.noaa.gov",
+        "repository.library.noaa.gov",
+        "ncei.noaa.gov"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.15,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_USGS_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "USGS",
+      "target_name": "US Geological Survey",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "usgs.gov",
+        "pubs.usgs.gov"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.85,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_USGS_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "USGS",
+      "target_name": "US Geological Survey",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "usgs.gov",
+        "pubs.usgs.gov"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.51,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_USGS_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "USGS",
+      "target_name": "US Geological Survey",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "usgs.gov",
+        "pubs.usgs.gov"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.81,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_USGS_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "USGS",
+      "target_name": "US Geological Survey",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "usgs.gov",
+        "pubs.usgs.gov"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.52,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_USGS_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "USGS",
+      "target_name": "US Geological Survey",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "usgs.gov",
+        "pubs.usgs.gov"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.87,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_USGS_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "USGS",
+      "target_name": "US Geological Survey",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "usgs.gov",
+        "pubs.usgs.gov"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 4.79,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_USGS_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "USGS",
+      "target_name": "US Geological Survey",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "usgs.gov",
+        "pubs.usgs.gov"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.91,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_USGS_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "USGS",
+      "target_name": "US Geological Survey",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "usgs.gov",
+        "pubs.usgs.gov"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.96,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ESRF_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "ESRF",
+      "target_name": "Environmental Studies Research Fund",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "esrfunds.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.12,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ESRF_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "ESRF",
+      "target_name": "Environmental Studies Research Fund",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "esrfunds.org"
+      ],
+      "result_count": 18,
+      "response_time_seconds": 4.07,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ESRF_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "ESRF",
+      "target_name": "Environmental Studies Research Fund",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "esrfunds.org"
+      ],
+      "result_count": 12,
+      "response_time_seconds": 3.99,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ESRF_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "ESRF",
+      "target_name": "Environmental Studies Research Fund",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "esrfunds.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.6,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ESRF_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "ESRF",
+      "target_name": "Environmental Studies Research Fund",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "esrfunds.org"
+      ],
+      "result_count": 18,
+      "response_time_seconds": 3.01,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ESRF_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "ESRF",
+      "target_name": "Environmental Studies Research Fund",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "esrfunds.org"
+      ],
+      "result_count": 12,
+      "response_time_seconds": 4.41,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ESRF_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "ESRF",
+      "target_name": "Environmental Studies Research Fund",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "esrfunds.org"
+      ],
+      "result_count": 12,
+      "response_time_seconds": 3.18,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_ESRF_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "ESRF",
+      "target_name": "Environmental Studies Research Fund",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "esrfunds.org"
+      ],
+      "result_count": 12,
+      "response_time_seconds": 4.13,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OFFSHORE_OPERATORS_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "OFFSHORE_OPERATORS",
+      "target_name": "Offshore operator public report portals",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "exploration.exxonmobilcanada.ca",
+        "bp.com",
+        "equinor.com",
+        "cdn.equinor.com"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 5.42,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OFFSHORE_OPERATORS_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "OFFSHORE_OPERATORS",
+      "target_name": "Offshore operator public report portals",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "exploration.exxonmobilcanada.ca",
+        "bp.com",
+        "equinor.com",
+        "cdn.equinor.com"
+      ],
+      "result_count": 18,
+      "response_time_seconds": 4.84,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OFFSHORE_OPERATORS_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "OFFSHORE_OPERATORS",
+      "target_name": "Offshore operator public report portals",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "exploration.exxonmobilcanada.ca",
+        "bp.com",
+        "equinor.com",
+        "cdn.equinor.com"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.8,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OFFSHORE_OPERATORS_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "OFFSHORE_OPERATORS",
+      "target_name": "Offshore operator public report portals",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "exploration.exxonmobilcanada.ca",
+        "bp.com",
+        "equinor.com",
+        "cdn.equinor.com"
+      ],
+      "result_count": 18,
+      "response_time_seconds": 4.37,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OFFSHORE_OPERATORS_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "OFFSHORE_OPERATORS",
+      "target_name": "Offshore operator public report portals",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "exploration.exxonmobilcanada.ca",
+        "bp.com",
+        "equinor.com",
+        "cdn.equinor.com"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 3.17,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OFFSHORE_OPERATORS_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "OFFSHORE_OPERATORS",
+      "target_name": "Offshore operator public report portals",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "exploration.exxonmobilcanada.ca",
+        "bp.com",
+        "equinor.com",
+        "cdn.equinor.com"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.14,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OFFSHORE_OPERATORS_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "OFFSHORE_OPERATORS",
+      "target_name": "Offshore operator public report portals",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "exploration.exxonmobilcanada.ca",
+        "bp.com",
+        "equinor.com",
+        "cdn.equinor.com"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.92,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_OFFSHORE_OPERATORS_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "OFFSHORE_OPERATORS",
+      "target_name": "Offshore operator public report portals",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "exploration.exxonmobilcanada.ca",
+        "bp.com",
+        "equinor.com",
+        "cdn.equinor.com"
+      ],
+      "result_count": 18,
+      "response_time_seconds": 4.86,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_FAO_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "FAO",
+      "target_name": "Food and Agriculture Organization of the United Nations",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fao.org",
+        "openknowledge.fao.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.99,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_FAO_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "FAO",
+      "target_name": "Food and Agriculture Organization of the United Nations",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fao.org",
+        "openknowledge.fao.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.06,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_FAO_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "FAO",
+      "target_name": "Food and Agriculture Organization of the United Nations",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fao.org",
+        "openknowledge.fao.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.09,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_FAO_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "FAO",
+      "target_name": "Food and Agriculture Organization of the United Nations",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fao.org",
+        "openknowledge.fao.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.21,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_FAO_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "FAO",
+      "target_name": "Food and Agriculture Organization of the United Nations",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fao.org",
+        "openknowledge.fao.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 4.42,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_FAO_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "FAO",
+      "target_name": "Food and Agriculture Organization of the United Nations",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fao.org",
+        "openknowledge.fao.org"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 4.99,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_FAO_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "FAO",
+      "target_name": "Food and Agriculture Organization of the United Nations",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fao.org",
+        "openknowledge.fao.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.64,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_FAO_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "FAO",
+      "target_name": "Food and Agriculture Organization of the United Nations",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "fao.org",
+        "openknowledge.fao.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 4.15,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_AIMS_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "AIMS",
+      "target_name": "Australian Institute of Marine Science",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "aims.gov.au"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 4.93,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_AIMS_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "AIMS",
+      "target_name": "Australian Institute of Marine Science",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "aims.gov.au"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.74,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_AIMS_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "AIMS",
+      "target_name": "Australian Institute of Marine Science",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "aims.gov.au"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.59,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_AIMS_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "AIMS",
+      "target_name": "Australian Institute of Marine Science",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "aims.gov.au"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.22,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_AIMS_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "AIMS",
+      "target_name": "Australian Institute of Marine Science",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "aims.gov.au"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.08,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_AIMS_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "AIMS",
+      "target_name": "Australian Institute of Marine Science",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "aims.gov.au"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.9,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_AIMS_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "AIMS",
+      "target_name": "Australian Institute of Marine Science",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "aims.gov.au"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 3.77,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_AIMS_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "AIMS",
+      "target_name": "Australian Institute of Marine Science",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "aims.gov.au"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 3.98,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_JNCC_NERC_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "JNCC_NERC",
+      "target_name": "UK Joint Nature Conservation Committee and NERC repository",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "jncc.gov.uk",
+        "data.jncc.gov.uk",
+        "nora.nerc.ac.uk"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.48,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_JNCC_NERC_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "JNCC_NERC",
+      "target_name": "UK Joint Nature Conservation Committee and NERC repository",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "jncc.gov.uk",
+        "data.jncc.gov.uk",
+        "nora.nerc.ac.uk"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 4.37,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_JNCC_NERC_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "JNCC_NERC",
+      "target_name": "UK Joint Nature Conservation Committee and NERC repository",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "jncc.gov.uk",
+        "data.jncc.gov.uk",
+        "nora.nerc.ac.uk"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 4.87,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_JNCC_NERC_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "JNCC_NERC",
+      "target_name": "UK Joint Nature Conservation Committee and NERC repository",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "jncc.gov.uk",
+        "data.jncc.gov.uk",
+        "nora.nerc.ac.uk"
+      ],
+      "result_count": 9,
+      "response_time_seconds": 2.03,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_JNCC_NERC_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "JNCC_NERC",
+      "target_name": "UK Joint Nature Conservation Committee and NERC repository",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "jncc.gov.uk",
+        "data.jncc.gov.uk",
+        "nora.nerc.ac.uk"
+      ],
+      "result_count": 20,
+      "response_time_seconds": 4.35,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_JNCC_NERC_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "JNCC_NERC",
+      "target_name": "UK Joint Nature Conservation Committee and NERC repository",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "jncc.gov.uk",
+        "data.jncc.gov.uk",
+        "nora.nerc.ac.uk"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 4.13,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_JNCC_NERC_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "JNCC_NERC",
+      "target_name": "UK Joint Nature Conservation Committee and NERC repository",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "jncc.gov.uk",
+        "data.jncc.gov.uk",
+        "nora.nerc.ac.uk"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.75,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_JNCC_NERC_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "JNCC_NERC",
+      "target_name": "UK Joint Nature Conservation Committee and NERC repository",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "jncc.gov.uk",
+        "data.jncc.gov.uk",
+        "nora.nerc.ac.uk"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.6,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_MBARI_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "MBARI",
+      "target_name": "Monterey Bay Aquarium Research Institute",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "mbari.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.88,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_MBARI_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "MBARI",
+      "target_name": "Monterey Bay Aquarium Research Institute",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "mbari.org"
+      ],
+      "result_count": 0,
+      "response_time_seconds": 3.7,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_MBARI_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "MBARI",
+      "target_name": "Monterey Bay Aquarium Research Institute",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "mbari.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.91,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_MBARI_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "MBARI",
+      "target_name": "Monterey Bay Aquarium Research Institute",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "mbari.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 2.48,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_MBARI_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "MBARI",
+      "target_name": "Monterey Bay Aquarium Research Institute",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "mbari.org"
+      ],
+      "result_count": 18,
+      "response_time_seconds": 4.05,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_MBARI_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "MBARI",
+      "target_name": "Monterey Bay Aquarium Research Institute",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "mbari.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 4.19,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_MBARI_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "MBARI",
+      "target_name": "Monterey Bay Aquarium Research Institute",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "mbari.org"
+      ],
+      "result_count": 17,
+      "response_time_seconds": 3.17,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_MBARI_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "MBARI",
+      "target_name": "Monterey Bay Aquarium Research Institute",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "mbari.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.91,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_WOA_SED_SUSPENDED_01",
+      "family": "SED_SUSPENDED",
+      "search_phase": "targeted_institutional",
+      "target_id": "WOA",
+      "target_name": "United Nations World Ocean Assessment",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"suspended solids\" OR turbidity OR resuspension OR \"sediment plume\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "woa.un.org"
+      ],
+      "result_count": 19,
+      "response_time_seconds": 3.65,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_WOA_SED_DEPOSITION_01",
+      "family": "SED_DEPOSITION",
+      "search_phase": "targeted_institutional",
+      "target_id": "WOA",
+      "target_name": "United Nations World Ocean Assessment",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"sediment deposition\" OR \"sediment accumulation\" OR burial OR smothering OR \"sediment cover\" OR \"deposition rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "woa.un.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 1.99,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_WOA_SED_DRILLING_01",
+      "family": "SED_DRILLING",
+      "search_phase": "targeted_institutional",
+      "target_id": "WOA",
+      "target_name": "United Nations World Ocean Assessment",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"drill cuttings\" OR \"drilling mud\" OR \"drilling fluid\" OR \"drilling discharge\" OR \"cuttings pile\" OR \"offshore drilling\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "woa.un.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.91,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_WOA_SED_DREDGING_01",
+      "family": "SED_DREDGING",
+      "search_phase": "targeted_institutional",
+      "target_id": "WOA",
+      "target_name": "United Nations World Ocean Assessment",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (dredging OR \"dredge plume\" OR \"dredged material\" OR \"spoil disposal\" OR \"resuspended sediment\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "woa.un.org"
+      ],
+      "result_count": 17,
+      "response_time_seconds": 2.47,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_WOA_SED_TAILINGS_01",
+      "family": "SED_TAILINGS",
+      "search_phase": "targeted_institutional",
+      "target_id": "WOA",
+      "target_name": "United Nations World Ocean Assessment",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"mine tailings\" OR \"submarine tailings\" OR \"deep-sea mining\" OR \"deep sea mining\" OR \"mining plume\" OR \"marine disposal\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "woa.un.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.05,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_WOA_MECH_FEEDING_MUCUS_CORAL_01",
+      "family": "MECH_FEEDING_MUCUS_CORAL",
+      "search_phase": "targeted_institutional",
+      "target_id": "WOA",
+      "target_name": "United Nations World Ocean Assessment",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\") (sediment OR turbidity OR burial OR \"drill cuttings\") (mucus OR mucociliary OR \"sediment rejection\" OR \"sediment clearance\" OR feeding OR \"food capture\" OR \"polyp activity\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "woa.un.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.97,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_WOA_MECH_FEEDING_PUMPING_SPONGE_01",
+      "family": "MECH_FEEDING_PUMPING_SPONGE",
+      "search_phase": "targeted_institutional",
+      "target_id": "WOA",
+      "target_name": "United Nations World Ocean Assessment",
+      "query": "(sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (sediment OR turbidity OR \"suspended solids\" OR \"drill cuttings\") (pumping OR filtration OR clogging OR \"feeding current\" OR \"food capture\" OR \"clearance rate\") (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "woa.un.org"
+      ],
+      "result_count": 0,
+      "response_time_seconds": 3.65,
+      "credits_used": 1
+    },
+    {
+      "query_id": "GL_WOA_RESP_THRESHOLD_RECOVERY_01",
+      "family": "RESP_THRESHOLD_RECOVERY",
+      "search_phase": "targeted_institutional",
+      "target_id": "WOA",
+      "target_name": "United Nations World Ocean Assessment",
+      "query": "(coral OR corals OR octocoral OR gorgonian OR \"sea pen\" OR scleractinian OR antipatharian OR \"black coral\" OR sponge OR sponges OR Porifera OR demosponge OR hexactinellid OR \"glass sponge\" OR \"deep-sea sponge\" OR \"cold-water sponge\") (\"suspended sediment\" OR \"sediment deposition\" OR turbidity OR burial OR smothering OR \"drill cuttings\" OR \"sediment plume\") (threshold OR tolerance OR sensitivity OR \"dose response\" OR \"exposure response\" OR recovery OR mortality OR survival) (report OR \"technical report\" OR \"monitoring report\" OR assessment OR \"environmental impact statement\" OR EIS OR thesis OR dissertation OR proceedings OR \"regulatory submission\" OR \"operator report\")",
+      "domains": [
+        "woa.un.org"
+      ],
+      "result_count": 10,
+      "response_time_seconds": 2.69,
+      "credits_used": 1
+    }
+  ]
+}

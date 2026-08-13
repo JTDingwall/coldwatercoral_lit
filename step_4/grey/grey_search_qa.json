@@ -1,0 +1,11 @@
+{
+  "date_validated": "2026-08-13",
+  "broad_rows": 234,
+  "targeted_rows": 1748,
+  "enriched_rows": 1982,
+  "unique_urls": 565,
+  "query_hits_retained_with_duplicates": true,
+  "relevance_screening_performed": false,
+  "cross_query_deduplication_performed": false,
+  "status": "passed"
+}

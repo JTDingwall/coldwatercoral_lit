@@ -1,0 +1,16 @@
+target_id,target_name,domains,status,basis
+DFO,Fisheries and Oceans Canada,dfo-mpo.gc.ca|waves-vagues.dfo-mpo.gc.ca|publications.gc.ca,active,Agreed Canadian science agency target; related DFO repositories surfaced in broad search
+CNLOER,Canada-Newfoundland and Labrador Offshore Energy Regulator,cnloer.ca|c-nlopb.ca,active,Agreed Canadian offshore regulator target including legacy domain
+IAAC,Impact Assessment Agency of Canada,iaac-aeic.gc.ca,active,Agreed Canadian assessment repository target
+NORWAY,Norwegian regulators and marine research repositories,regjeringen.no|miljodirektoratet.no|havforskningsinstituttet.no|hi.no|niva.no|ntnuopen.ntnu.no|munin.uit.no,active,Agreed Norway institutional target group
+OSPAR,OSPAR Commission,ospar.org,active,Agreed regional marine convention target
+ICES,International Council for the Exploration of the Sea,ices.dk,active,Agreed international scientific body target
+NOAA,US National Oceanic and Atmospheric Administration,fisheries.noaa.gov|repository.library.noaa.gov|ncei.noaa.gov,active,Discovered in broad results as a deep-sea coral and sponge report publisher and repository
+USGS,US Geological Survey,usgs.gov|pubs.usgs.gov,active,Discovered in broad results as a deep-sea coral and sponge report publisher
+ESRF,Environmental Studies Research Fund,esrfunds.org,active,Discovered in broad drilling-family results as a Canadian offshore research report program
+OFFSHORE_OPERATORS,Offshore operator public report portals,exploration.exxonmobilcanada.ca|bp.com|equinor.com|cdn.equinor.com,active,Discovered in broad drilling-family results containing monitoring and seabed investigation reports
+FAO,Food and Agriculture Organization of the United Nations,fao.org|openknowledge.fao.org,active,Discovered in broad results as a VME and deep-sea sponge report repository
+AIMS,Australian Institute of Marine Science,aims.gov.au,active,Discovered in broad mechanism and response results as a sediment-response research report source
+JNCC_NERC,UK Joint Nature Conservation Committee and NERC repository,jncc.gov.uk|data.jncc.gov.uk|nora.nerc.ac.uk,active,Discovered in broad results as UK marine evidence and research-report repositories
+MBARI,Monterey Bay Aquarium Research Institute,mbari.org,active,Discovered in broad results as a deep-sea research report source
+WOA,United Nations World Ocean Assessment,woa.un.org,active,Discovered in broad results as an international cold-water coral and sponge assessment source

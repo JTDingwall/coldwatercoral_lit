@@ -17,5 +17,9 @@ Files:
 - `run_openalex.py`
 - `semantic_scholar_queries.md`
 - `run_semantic_scholar_searches.py`
+- `grey_literature_queries.md`
+- `grey_institutional_targets.csv`
+- `run_grey_literature_searches.py`
+- `documents/document_manifest.csv`
 
 Use the GitHub issue `Step 4 production search tracker` as the sequenced checklist.

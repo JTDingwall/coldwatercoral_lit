@@ -1,0 +1,13 @@
+{
+  "date_run": "2026-08-13",
+  "record_count": 1982,
+  "unique_urls_submitted": 565,
+  "purpose": "Unverified descriptive metadata only; no screening or deduplication.",
+  "usage": {
+    "prompt_tokens": 196667,
+    "completion_tokens": 33967,
+    "total_tokens": 230634,
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 196667
+  }
+}
