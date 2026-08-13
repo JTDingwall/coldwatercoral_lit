@@ -1,0 +1,23 @@
+{
+  "system": "Crossref REST API",
+  "endpoint": "https://api.crossref.org/works",
+  "completed_at_utc": "2026-08-13T22:48:18+00:00",
+  "scope": "DOI and publication-metadata resolution only for unresolved records present in the frozen Web of Science production exports; not a discovery search",
+  "target_definition": "Unique normalized title-year groups represented in Web of Science and lacking a DOI in every matching Web of Science, OpenAlex, and Semantic Scholar record",
+  "source_record_count": 18311,
+  "unique_unresolved_title_year_count": 230,
+  "resolution_status_counts": {
+    "accepted": 24,
+    "no_match": 190,
+    "review": 16
+  },
+  "accepted_doi_count": 24,
+  "output_file": "step_4/crossref/crossref_resolutions.csv",
+  "matching_policy": {
+    "accepted": "Exact or near-exact normalized title, publication year within one year, and consistent first author when both sources provide one",
+    "review": "Plausible title/year match below the automatic acceptance threshold",
+    "no_match": "No candidate met the review threshold",
+    "not_queried": "Input lacked a sufficiently informative title or publication year"
+  },
+  "notes": "Original source exports were not modified. Only rows marked accepted should be used for automatic DOI assignment; review rows require manual confirmation."
+}
