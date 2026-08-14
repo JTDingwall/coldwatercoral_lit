@@ -124,7 +124,7 @@ def main() -> None:
             "url": url,
             "score": item.get("score", ""),
             "published_date": item.get("published_date") or "",
-            "content": re.sub(r"\s+", " ", item.get("content") or "").strip()[:800],
+            "content": " ".join(re.sub(r"\s+", " ", item.get("content") or "").strip().split()[:20]),
             "exact_target_title": str(exact_title),
             "exact_target_url": str(exact_url),
         }
