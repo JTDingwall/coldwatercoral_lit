@@ -27,7 +27,8 @@ from urllib.parse import parse_qsl, unquote, urlencode, urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "corpus"
-SYSTEM_PRIORITY = {"OpenAlex": 4, "Semantic Scholar": 3, "Web of Science": 2, "Grey literature": 1}
+SYSTEM_PRIORITY = {"OpenAlex": 4, "Citation chaining": 4, "Semantic Scholar": 3,
+                   "Web of Science": 2, "Grey literature": 1}
 TRACKING_PARAMETERS = {
     "fbclid", "gclid", "mc_cid", "mc_eid", "ref", "source",
     "utm_campaign", "utm_content", "utm_medium", "utm_source", "utm_term",
@@ -271,6 +272,32 @@ def load_records() -> tuple[list[Record], dict[str, int]]:
                 full_text_status="OPEN_ACCESS_PDF" if pdf_url else "NOT_IDENTIFIED",
                 full_text_location=pdf_url,
                 extra_identifiers=" | ".join(filter(None, [row.get("paper_id", ""), row.get("corpus_id", ""), row.get("arxiv_id", ""), row.get("pubmed_id", "")])),
+            )
+
+    chain_path = ROOT / "citation_chaining" / "citation_candidates.csv"
+    if chain_path.exists():
+        chain_rows = list(read_csv(chain_path))
+        input_counts[chain_path.relative_to(ROOT).as_posix()] = len(chain_rows)
+        qa_path = ROOT / "citation_chaining" / "citation_chain_qa.json"
+        chain_date = ""
+        if qa_path.exists():
+            chain_date = json.loads(qa_path.read_text(encoding="utf-8")).get("date_searched", "")
+        for row in chain_rows:
+            add_record(
+                records, system="Citation chaining", query_id=row.get("query_ids", ""),
+                family=row.get("families", ""), source_file=chain_path.relative_to(ROOT).as_posix(),
+                source_record_id=row.get("openalex_id", ""), title=row.get("title", ""),
+                authors=row.get("authors", ""), year=row.get("publication_year", ""),
+                publication_date=row.get("publication_date", ""), source_title=row.get("primary_source", ""),
+                document_type=row.get("work_type", ""), doi=row.get("doi", ""),
+                url=row.get("landing_page_url", ""), language=row.get("language", ""),
+                abstract_or_snippet=row.get("abstract", ""), retrieved_date=chain_date,
+                full_text_status=row.get("full_text_status", "NOT_IDENTIFIED"),
+                full_text_location=row.get("full_text_location", ""),
+                extra_identifiers=" | ".join(filter(None, [
+                    row.get("openalex_id", ""), row.get("parent_openalex_ids", ""),
+                    row.get("parent_corpus_ids", ""),
+                ])),
             )
 
     grey_path = ROOT / "grey" / "grey_candidates_enriched.csv"
