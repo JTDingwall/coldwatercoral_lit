@@ -10,6 +10,7 @@ Folders:
 - `documents/`
 - `corpus/` — merged candidate corpus, occurrence-level provenance, and QA
 - `citation_chaining/` — two-generation graph outputs and citation provenance
+- `benchmark_recovery/` — post-discovery benchmark matches, diagnostics, and QA
 
 Files:
 - `benchmark_sources.csv`
@@ -24,6 +25,7 @@ Files:
 - `run_grey_literature_searches.py`
 - `build_candidate_corpus.py`
 - `run_citation_chaining.py`
+- `check_benchmark_recovery.py`
 - `documents/document_manifest.csv`
 
 Use the GitHub issue `Step 4 production search tracker` as the sequenced checklist.
