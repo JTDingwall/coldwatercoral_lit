@@ -1,0 +1,2 @@
+query_id,benchmark_id,system,date_searched,title,url,remediation_basis,initial_independent_recovery
+GL_USGS_SED_DRILLING_02,B005,Benchmark remediation,2026-08-14,International Team Studies Impacts of Oil and Gas Drilling on Cold-Water Corals in Norway,https://www.usgs.gov/centers/spcmsc/news/international-team-studies-impacts-oil-and-gas-drilling-cold-water-corals,FROZEN_URL_EXTRACT_TITLE_MATCH,False
