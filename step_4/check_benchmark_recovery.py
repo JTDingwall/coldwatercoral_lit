@@ -149,7 +149,13 @@ def main() -> None:
         fuzzy.sort(key=lambda item: (-item[0], item[1]))
         if exact:
             _, _, basis, match = exact[0]
-            status = "RECOVERED"
+            query_set = {value for value in match.get("query_ids", "").split(" | ") if value}
+            remediation_only = (
+                benchmark["benchmark_id"] == "B005"
+                and bool(query_set)
+                and query_set <= {"GL_USGS_SED_DRILLING_02"}
+            )
+            status = "RECOVERED_AFTER_REMEDIATION" if remediation_only else "RECOVERED"
             match_basis = " | ".join(sorted(basis))
             similarity = max((SequenceMatcher(None, target, normalize_title(match.get("title", ""))).ratio()
                               for target in fuzzy_targets), default=0.0)
@@ -202,10 +208,13 @@ def main() -> None:
     write_csv(OUT / "benchmark_recovery.csv", results, fields)
     write_csv(OUT / "benchmark_miss_diagnostics.csv", misses, miss_fields)
 
-    by_type = defaultdict(lambda: Counter(total=0, recovered=0))
+    by_type = defaultdict(Counter)
     for row in results:
         by_type[row["benchmark_type"]]["total"] += 1
-        by_type[row["benchmark_type"]]["recovered"] += row["recovery_status"] == "RECOVERED"
+        by_type[row["benchmark_type"]]["initially_recovered"] += row["recovery_status"] == "RECOVERED"
+        by_type[row["benchmark_type"]]["recovered_after_remediation"] += (
+            row["recovery_status"] == "RECOVERED_AFTER_REMEDIATION")
+        by_type[row["benchmark_type"]]["accounted"] += row["recovery_status"] != "NOT_RECOVERED"
     positive = [row for row in results if row["benchmark_type"] == "POSITIVE_CORE"]
     chain_qa_available = CHAIN_QA.exists()
     chain_qa = json.loads(CHAIN_QA.read_text(encoding="utf-8")) if chain_qa_available else {}
@@ -213,9 +222,15 @@ def main() -> None:
         "benchmark_rows": len(benchmarks),
         "candidate_corpus_rows": len(corpus),
         "results_by_benchmark_type": {key: dict(value) for key, value in sorted(by_type.items())},
-        "positive_core_recovered": sum(row["recovery_status"] == "RECOVERED" for row in positive),
+        "positive_core_initially_recovered": sum(row["recovery_status"] == "RECOVERED" for row in positive),
+        "positive_core_recovered_after_remediation": sum(
+            row["recovery_status"] == "RECOVERED_AFTER_REMEDIATION" for row in positive),
+        "positive_core_accounted": sum(row["recovery_status"] != "NOT_RECOVERED" for row in positive),
         "positive_core_total": len(positive),
-        "positive_core_recovery_complete": all(row["recovery_status"] == "RECOVERED" for row in positive),
+        "positive_core_initial_independent_recovery_complete": all(
+            row["recovery_status"] == "RECOVERED" for row in positive),
+        "positive_core_recovery_check_complete": all(
+            row["recovery_status"] != "NOT_RECOVERED" for row in positive),
         "misses_total": len(misses),
         "revised_search_required": any(row["benchmark_type"] == "POSITIVE_CORE" for row in misses),
         "citation_chain_qa_available": chain_qa_available,
@@ -223,9 +238,9 @@ def main() -> None:
             "benchmark_ids_unique": len({row["benchmark_id"] for row in benchmarks}) == len(benchmarks),
             "all_benchmark_rows_reported": len(results) == len(benchmarks),
             "automatic_recovery_uses_exact_evidence_only": all(
-                row["recovery_status"] != "RECOVERED" or row["match_basis"] != "NO_EXACT_MATCH" for row in results),
+                row["recovery_status"] == "NOT_RECOVERED" or row["match_basis"] != "NO_EXACT_MATCH" for row in results),
             "all_recovered_rows_have_corpus_ids": all(
-                row["recovery_status"] != "RECOVERED" or row["matched_corpus_id"] for row in results),
+                row["recovery_status"] == "NOT_RECOVERED" or row["matched_corpus_id"] for row in results),
             "citation_chain_excluded_benchmark_seed_source": (
                 not chain_qa_available or chain_qa.get("benchmark_file_used_as_seed_source") is False),
             "candidate_corpus_not_modified": True,
