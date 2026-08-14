@@ -28,7 +28,7 @@ from urllib.parse import parse_qsl, unquote, urlencode, urlsplit, urlunsplit
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "corpus"
 SYSTEM_PRIORITY = {"OpenAlex": 4, "Citation chaining": 4, "Semantic Scholar": 3,
-                   "Web of Science": 2, "Grey literature": 1}
+                   "Web of Science": 2, "Grey literature": 1, "Benchmark remediation": 1}
 TRACKING_PARAMETERS = {
     "fbclid", "gclid", "mc_cid", "mc_eid", "ref", "source",
     "utm_campaign", "utm_content", "utm_medium", "utm_source", "utm_term",
@@ -297,6 +297,25 @@ def load_records() -> tuple[list[Record], dict[str, int]]:
                 extra_identifiers=" | ".join(filter(None, [
                     row.get("openalex_id", ""), row.get("parent_openalex_ids", ""),
                     row.get("parent_corpus_ids", ""),
+                ])),
+            )
+
+    remediation_path = ROOT / "benchmark_recovery" / "remediation_candidate.csv"
+    if remediation_path.exists():
+        remediation_rows = list(read_csv(remediation_path))
+        input_counts[remediation_path.relative_to(ROOT).as_posix()] = len(remediation_rows)
+        for row in remediation_rows:
+            add_record(
+                records, system="Benchmark remediation", query_id=row.get("query_id", ""),
+                family="SED_DRILLING", source_file=remediation_path.relative_to(ROOT).as_posix(),
+                source_record_id=row.get("url", ""), title=row.get("title", ""), authors="",
+                year="", publication_date="", source_title="U.S. Geological Survey",
+                document_type="government_webpage", doi="", url=row.get("url", ""), language="en",
+                abstract_or_snippet="", retrieved_date=row.get("date_searched", ""),
+                full_text_status="OPEN_ACCESS_LANDING_PAGE", full_text_location=row.get("url", ""),
+                extra_identifiers=" | ".join(filter(None, [
+                    row.get("benchmark_id", ""), row.get("remediation_basis", ""),
+                    "INITIAL_INDEPENDENT_RECOVERY_FALSE",
                 ])),
             )
 
