@@ -1,0 +1,34 @@
+name: Check benchmark recovery
+
+on:
+  push:
+    paths:
+      - step_4/check_benchmark_recovery.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: step-4-benchmark-recovery
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check frozen benchmarks against final corpus
+        run: python step_4/check_benchmark_recovery.py
+      - name: Commit benchmark recovery outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add step_4/benchmark_recovery
+          git diff --cached --quiet && exit 0
+          git commit -m "Complete positive benchmark recovery check"
+          git push
