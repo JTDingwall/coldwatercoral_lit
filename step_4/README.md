@@ -26,6 +26,7 @@ Files:
 - `build_candidate_corpus.py`
 - `run_citation_chaining.py`
 - `check_benchmark_recovery.py`
+- `run_benchmark_remediation.py`
 - `documents/document_manifest.csv`
 
 Use the GitHub issue `Step 4 production search tracker` as the sequenced checklist.
