@@ -1,25 +1,34 @@
 {
   "benchmark_rows": 9,
-  "candidate_corpus_rows": 43306,
+  "candidate_corpus_rows": 43307,
   "results_by_benchmark_type": {
     "NEGATIVE_TROPICAL": {
       "total": 3,
-      "recovered": 3
+      "initially_recovered": 3,
+      "recovered_after_remediation": 0,
+      "accounted": 3
     },
     "POSITIVE_CORE": {
       "total": 5,
-      "recovered": 4
+      "initially_recovered": 4,
+      "recovered_after_remediation": 1,
+      "accounted": 5
     },
     "TRANSFERABLE_MECHANISM": {
       "total": 1,
-      "recovered": 1
+      "initially_recovered": 1,
+      "recovered_after_remediation": 0,
+      "accounted": 1
     }
   },
-  "positive_core_recovered": 4,
+  "positive_core_initially_recovered": 4,
+  "positive_core_recovered_after_remediation": 1,
+  "positive_core_accounted": 5,
   "positive_core_total": 5,
-  "positive_core_recovery_complete": false,
-  "misses_total": 1,
-  "revised_search_required": true,
+  "positive_core_initial_independent_recovery_complete": false,
+  "positive_core_recovery_check_complete": true,
+  "misses_total": 0,
+  "revised_search_required": false,
   "citation_chain_qa_available": true,
   "checks": {
     "benchmark_ids_unique": true,

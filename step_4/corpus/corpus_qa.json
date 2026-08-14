@@ -26,29 +26,31 @@
     "semantic_scholar/SS_SED_SUSPENDED_01.csv": 2143,
     "semantic_scholar/SS_SED_TAILINGS_01.csv": 75,
     "citation_chaining/citation_candidates.csv": 38104,
+    "benchmark_recovery/remediation_candidate.csv": 1,
     "grey/grey_candidates_enriched.csv": 1982
   },
   "input_occurrences_by_system": {
+    "Benchmark remediation": 1,
     "Citation chaining": 38104,
     "Grey literature": 1982,
     "OpenAlex": 7499,
     "Semantic Scholar": 6373,
     "Web of Science": 4439
   },
-  "input_occurrences_total": 58397,
-  "provenance_rows_total": 58397,
-  "unique_candidate_records": 43306,
+  "input_occurrences_total": 58398,
+  "provenance_rows_total": 58398,
+  "unique_candidate_records": 43307,
   "duplicate_occurrences_collapsed": 15091,
   "records_by_full_text_status": {
     "OPEN_ACCESS_PDF": 13205,
     "NOT_IDENTIFIED": 23792,
-    "OPEN_ACCESS_LANDING_PAGE": 5967,
+    "OPEN_ACCESS_LANDING_PAGE": 5968,
     "LIKELY_FULL_DOCUMENT_URL": 340,
     "ARCHIVED": 2
   },
   "clusters_by_deduplication_basis": {
     "DOI": 4505,
-    "SINGLETON": 37605,
+    "SINGLETON": 37606,
     "EXACT_TITLE_YEAR": 1289,
     "CANONICAL_URL": 102,
     "FUZZY_TITLE_AUTHOR": 15
@@ -58,8 +60,8 @@
   "fuzzy_pairs_kept_separate": 2709,
   "identifier_conflicts_kept_separate": 908,
   "missing_title_records": 125,
-  "missing_year_records": 342,
-  "missing_doi_records": 4814,
+  "missing_year_records": 343,
+  "missing_doi_records": 4815,
   "checks": {
     "all_occurrences_preserved": true,
     "occurrence_counts_reconcile": true,
