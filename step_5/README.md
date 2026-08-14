@@ -50,6 +50,10 @@ This creates:
 - `calibration/benchmark_key.csv`: the separately stored benchmark answer key;
   and
 - `calibration/calibration_qa.json`: reproducibility and coverage checks.
+- `calibration/stage5_human_calibration_review.xlsx`: formatted reviewer workbook
+  containing the calibration and blinded-benchmark sheets, dropdown controls,
+  progress counts, instructions, and the controlled vocabulary. The answer key is
+  intentionally omitted.
 
 The production AI run must not begin until the human labels are complete and the
 calibration gate is approved. The AI screening runner must never load
