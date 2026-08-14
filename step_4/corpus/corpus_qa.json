@@ -1,0 +1,73 @@
+{
+  "generated_date": "2026-08-13",
+  "input_file_counts": {
+    "wos/WOS_MECH_FEEDING_MUCUS_CORAL_01.ris": 713,
+    "wos/WOS_MECH_FEEDING_PUMPING_SPONGE_01.ris": 33,
+    "wos/WOS_RESP_THRESHOLD_RECOVERY_01.ris": 162,
+    "wos/WOS_SED_DEPOSITION_01.ris": 1167,
+    "wos/WOS_SED_DREDGING_01.ris": 671,
+    "wos/WOS_SED_DRILLING_01.ris": 75,
+    "wos/WOS_SED_SUSPENDED_01.ris": 1538,
+    "wos/WOS_SED_TAILINGS_01.ris": 80,
+    "openalex/OA_MECH_FEEDING_MUCUS_CORAL_01.csv": 774,
+    "openalex/OA_MECH_FEEDING_PUMPING_SPONGE_01.csv": 35,
+    "openalex/OA_RESP_THRESHOLD_RECOVERY_01.csv": 1017,
+    "openalex/OA_SED_DEPOSITION_01.csv": 1643,
+    "openalex/OA_SED_DREDGING_01.csv": 1216,
+    "openalex/OA_SED_DRILLING_01.csv": 97,
+    "openalex/OA_SED_SUSPENDED_01.csv": 2621,
+    "openalex/OA_SED_TAILINGS_01.csv": 96,
+    "semantic_scholar/SS_MECH_FEEDING_MUCUS_CORAL_01.csv": 715,
+    "semantic_scholar/SS_MECH_FEEDING_PUMPING_SPONGE_01.csv": 20,
+    "semantic_scholar/SS_RESP_THRESHOLD_RECOVERY_01.csv": 794,
+    "semantic_scholar/SS_SED_DEPOSITION_01.csv": 1490,
+    "semantic_scholar/SS_SED_DREDGING_01.csv": 1064,
+    "semantic_scholar/SS_SED_DRILLING_01.csv": 72,
+    "semantic_scholar/SS_SED_SUSPENDED_01.csv": 2143,
+    "semantic_scholar/SS_SED_TAILINGS_01.csv": 75,
+    "grey/grey_candidates_enriched.csv": 1982
+  },
+  "input_occurrences_by_system": {
+    "Grey literature": 1982,
+    "OpenAlex": 7499,
+    "Semantic Scholar": 6373,
+    "Web of Science": 4439
+  },
+  "input_occurrences_total": 20293,
+  "provenance_rows_total": 20293,
+  "unique_candidate_records": 7959,
+  "duplicate_occurrences_collapsed": 12334,
+  "records_by_full_text_status": {
+    "NOT_IDENTIFIED": 4501,
+    "OPEN_ACCESS_PDF": 1617,
+    "OPEN_ACCESS_LANDING_PAGE": 1495,
+    "LIKELY_FULL_DOCUMENT_URL": 344,
+    "ARCHIVED": 2
+  },
+  "clusters_by_deduplication_basis": {
+    "DOI": 3938,
+    "SINGLETON": 2909,
+    "EXACT_TITLE_YEAR": 1190,
+    "CANONICAL_URL": 102,
+    "FUZZY_TITLE_AUTHOR": 13
+  },
+  "fuzzy_pairs_reviewed": 686,
+  "fuzzy_pairs_merged": 13,
+  "fuzzy_pairs_kept_separate": 673,
+  "identifier_conflicts_kept_separate": 265,
+  "missing_title_records": 105,
+  "missing_year_records": 338,
+  "missing_doi_records": 2012,
+  "checks": {
+    "all_occurrences_preserved": true,
+    "occurrence_counts_reconcile": true,
+    "occurrence_ids_unique": true,
+    "corpus_ids_unique": true,
+    "doi_values_unique_across_corpus": true,
+    "no_cluster_contains_conflicting_dois": true,
+    "every_provenance_row_has_corpus_id": true,
+    "no_empty_query_ids": true,
+    "full_text_locations_present_when_identified": true,
+    "no_relevance_screening_performed": true
+  }
+}
