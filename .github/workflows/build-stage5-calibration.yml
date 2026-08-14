@@ -1,0 +1,45 @@
+name: Build Stage 5 calibration package
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "step_5/build_calibration_sample.py"
+      - "step_5/input_manifest.json"
+      - "step_5/controlled_vocabulary.csv"
+      - "step_5/screening_protocol.md"
+      - "step_5/prompts/title_abstract_screening_v1.md"
+      - "step_5/schemas/screening_output.schema.json"
+      - ".github/workflows/build-stage5-calibration.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate JSON files
+        run: |
+          python -m json.tool step_5/input_manifest.json >/dev/null
+          python -m json.tool step_5/schemas/screening_output.schema.json >/dev/null
+      - name: Build calibration package
+        run: python step_5/build_calibration_sample.py
+      - name: Commit calibration outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add step_5/calibration/
+          if git diff --cached --quiet; then
+            echo "Calibration outputs are already current."
+          else
+            git commit -m "Build Stage 5 calibration package"
+            git push
+          fi
