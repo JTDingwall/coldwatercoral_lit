@@ -54,6 +54,17 @@ This creates:
   containing the calibration and blinded-benchmark sheets, dropdown controls,
   progress counts, instructions, and the controlled vocabulary. The answer key is
   intentionally omitted.
+- `calibration/stage5_covidence_calibration.ris`: Covidence-ready RIS containing
+  all 400 calibration records and nine blinded benchmarks in a deterministic
+  shuffled order. Expected decisions, benchmark types, and split labels are
+  intentionally omitted; `corpus_id` is retained as the accession number for
+  reconciliation after screening.
+
+Regenerate the Covidence import with:
+
+```bash
+python step_5/export_calibration_ris.py
+```
 
 The production AI run must not begin until the human labels are complete and the
 calibration gate is approved. The AI screening runner must never load
