@@ -1,0 +1,2 @@
+benchmark_id,benchmark_type,benchmark_title,diagnosis,closest_corpus_id,closest_title,closest_title_similarity,recommended_action
+B005,POSITIVE_CORE,International team studies impacts of oil and gas drilling on cold-water corals,"No exact DOI, canonical URL, resolved alias, or normalized-title match",CWC-73423082B670,The Impact of Anthropogenic Activity on Cold-Water Corals,0.5882,Review closest candidate; design a justified _02 search only if the benchmark is truly absent
