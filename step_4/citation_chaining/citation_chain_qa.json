@@ -1,0 +1,32 @@
+{
+  "date_searched": "2026-08-14",
+  "api": "OpenAlex Works API",
+  "maximum_generation": 2,
+  "benchmark_file_used_as_seed_source": false,
+  "primary_seed_rows": 554,
+  "primary_seed_openalex_works": 554,
+  "unresolved_seed_candidates": 32,
+  "generation_2_seed_works": 296,
+  "citation_edges": 91333,
+  "edges_by_route": {
+    "RELATED_WORK": 8555,
+    "BACKWARD_REFERENCE": 41034,
+    "FORWARD_CITATION": 41744
+  },
+  "edges_by_generation": {
+    "1": 57720,
+    "2": 33613
+  },
+  "unique_discovered_openalex_works": 38104,
+  "new_to_candidate_corpus_before_merge": 35581,
+  "already_present_before_merge": 2523,
+  "api_requests": 625,
+  "api_retries": 0,
+  "checks": {
+    "generation_cap_respected": true,
+    "all_edges_have_parent_and_child": true,
+    "all_discovered_ids_have_metadata": true,
+    "seed_manifest_excludes_benchmark_source": true,
+    "no_relevance_screening_performed": true
+  }
+}
