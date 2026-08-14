@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/JTDingwall/coldwatercoral_lit/step_5/schemas/screening_output.schema.json",
+  "title": "Stage 5 title/abstract screening output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "corpus_id",
+    "decision",
+    "reason_code",
+    "organism_evidence",
+    "stressor_evidence",
+    "response_evidence",
+    "transferability_basis",
+    "screening_source",
+    "confidence",
+    "needs_full_text",
+    "rationale"
+  ],
+  "properties": {
+    "corpus_id": {"type": "string", "pattern": "^CWC-[A-F0-9]{12}$"},
+    "decision": {
+      "type": "string",
+      "enum": ["CORE_INCLUDE", "TRANSFERABLE_MECHANISM", "EXCLUDE", "UNCERTAIN"]
+    },
+    "reason_code": {
+      "type": ["string", "null"],
+      "enum": [
+        null,
+        "X01_ORGANISM_OUT_OF_SCOPE",
+        "X02_TROPICAL_NO_TRANSFER",
+        "X03_STRESSOR_OUT_OF_SCOPE",
+        "X04_SEDIMENT_PATHWAY_NOT_EXPLICIT",
+        "X05_RESPONSE_OUT_OF_SCOPE",
+        "X06_SOURCE_NOT_SUBSTANTIVE",
+        "X07_NOT_A_SOURCE",
+        "X08_OTHER_SCOPE_FAILURE",
+        "U01_MISSING_ABSTRACT",
+        "U02_AMBIGUOUS_ORGANISM",
+        "U03_AMBIGUOUS_STRESSOR",
+        "U04_AMBIGUOUS_RESPONSE",
+        "U05_AMBIGUOUS_TRANSFERABILITY",
+        "U06_CONFLICTING_METADATA"
+      ]
+    },
+    "organism_evidence": {"type": "string", "maxLength": 240},
+    "stressor_evidence": {"type": "string", "maxLength": 240},
+    "response_evidence": {"type": "string", "maxLength": 240},
+    "transferability_basis": {"type": ["string", "null"], "maxLength": 300},
+    "screening_source": {
+      "type": "string",
+      "enum": ["TITLE_ONLY", "TITLE_ABSTRACT", "LANDING_PAGE", "FULL_TEXT"]
+    },
+    "confidence": {"type": "string", "enum": ["HIGH", "MEDIUM", "LOW"]},
+    "needs_full_text": {"type": "boolean"},
+    "rationale": {"type": "string", "minLength": 1, "maxLength": 400}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"decision": {"const": "EXCLUDE"}}},
+      "then": {"properties": {"reason_code": {"type": "string", "pattern": "^X"}}}
+    },
+    {
+      "if": {"properties": {"decision": {"const": "UNCERTAIN"}}},
+      "then": {"properties": {"reason_code": {"type": "string", "pattern": "^U"}}}
+    },
+    {
+      "if": {"properties": {"confidence": {"const": "LOW"}}},
+      "then": {"properties": {"decision": {"const": "UNCERTAIN"}}}
+    }
+  ]
+}
