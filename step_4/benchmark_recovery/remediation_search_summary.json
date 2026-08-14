@@ -1,0 +1,15 @@
+{
+  "query_id": "GL_USGS_SED_DRILLING_02",
+  "benchmark_id": "B005",
+  "date_searched": "2026-08-14",
+  "query": "\"International team studies impacts of oil and gas drilling on cold-water corals\"",
+  "include_domains": [
+    "usgs.gov"
+  ],
+  "result_count": 10,
+  "exact_target_matches": 0,
+  "validated_target_extract": true,
+  "candidate_created": true,
+  "initial_independent_recovery": false,
+  "classification": "BENCHMARK_REMEDIATION"
+}
