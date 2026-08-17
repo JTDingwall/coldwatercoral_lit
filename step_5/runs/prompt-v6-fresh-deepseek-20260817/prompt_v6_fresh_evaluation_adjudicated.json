@@ -1,0 +1,45 @@
+{
+  "split": "PROMPT_V6_FRESH_VALIDATION_ADJUDICATED",
+  "rows": 80,
+  "human_review_complete": true,
+  "review_rows": 21,
+  "review_overrides": 16,
+  "review_exact_agreement": {
+    "n": 5,
+    "denominator": 21,
+    "proportion": 0.2381
+  },
+  "final_classification_counts": {
+    "CORE_INCLUDE": 18,
+    "TRANSFERABLE_MECHANISM": 0,
+    "CITATION_CHAIN_CANDIDATE": 1,
+    "UNCERTAIN": 0,
+    "EXCLUDE": 61
+  },
+  "focused_review_findings": {
+    "citation_chain_candidates_reviewed": 15,
+    "citation_chain_candidates_retained": 1,
+    "citation_chain_candidates_rejected": 14,
+    "uncertain_rows_resolved_to_exclude": 2,
+    "deepcold_response_exclusions_affirmed": 4,
+    "retained_citation_chain_record_ids": [
+      "V6V-078"
+    ]
+  },
+  "policy_checks": {
+    "all_18_core_includes_trusted": true,
+    "all_25_tropical_hard_negatives_excluded": true,
+    "no_transferable_mechanism_rows": true,
+    "no_unresolved_uncertain_rows": true,
+    "all_four_focused_exclusions_affirmed": true
+  },
+  "prompt_v6_boundary_assessment": "PASS_CONSERVATIVE_SCOPE_BOUNDARY",
+  "production_screening_approved": false,
+  "production_hold_reason": "Prompt v6 overused CITATION_CHAIN_CANDIDATE: 14 of 15 reviewed assignments were rejected. Tighten the citation-chain rule and validate the revision on a new zero-overlap sample before production.",
+  "outputs": {
+    "completed_review": "step_5/calibration/prompt_v6_fresh_human_review_completed.csv",
+    "adjudication_log": "prompt_v6_fresh_adjudication_log.csv",
+    "adjudicated_classifications": "prompt_v6_fresh_classifications_adjudicated.csv",
+    "retained_sources": "prompt_v6_fresh_retained_sources_adjudicated.csv"
+  }
+}

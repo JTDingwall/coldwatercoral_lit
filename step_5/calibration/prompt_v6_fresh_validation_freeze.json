@@ -1,5 +1,5 @@
 {
-  "status": "COMPLETED_HUMAN_REVIEW_REQUIRED",
+  "status": "HUMAN_REVIEW_COMPLETED_PROMPT_REFINEMENT_REQUIRED",
   "freeze_date": "2026-08-17",
   "rows": 80,
   "input_file": "step_5/calibration/prompt_v6_fresh_validation_model_input.csv",
@@ -74,8 +74,25 @@
     "scope": "Frozen lawful public full-document metadata only; university subscription access was not tested"
   },
   "next_gate": {
-    "human_review_required": true,
-    "human_review_rows": 21,
+    "human_review_required": false,
+    "human_review_rows": 0,
+    "production_screening_approved": false,
+    "required_action": "Tighten CITATION_CHAIN_CANDIDATE for prompt v7 and validate it on a new zero-overlap sample."
+  },
+  "adjudication": {
+    "completed_date": "2026-08-17",
+    "completed_review_sha256": "5fb7dac44d013061e8d2a933d6757fabf8df0fa5dddd8d94f923701c347e5743",
+    "adjudication_log_sha256": "4edf83b353939d56eed3b50ef791718517148e7c504f42d61e3425ad9df88524",
+    "adjudicated_classifications_sha256": "73f2ee123ac5220a51998effe12e5eb7fbd76fc29cba131d916f034022f82046",
+    "retained_sources_sha256": "95c583bb460007f4df1b13d7639a695f7d29422bbdeaf769eba4bcb4b502b41f",
+    "adjudicated_evaluation_sha256": "617da4ef86eb543f777bbcf7b6873f35781c563cff1ebd76c3d238b462bd6b49",
+    "final_counts": {
+      "CORE_INCLUDE": 18,
+      "TRANSFERABLE_MECHANISM": 0,
+      "CITATION_CHAIN_CANDIDATE": 1,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 61
+    },
     "production_screening_approved": false
   }
 }

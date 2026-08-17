@@ -249,9 +249,20 @@ warm-water/tropical hard negatives were excluded, and none was assigned core or
 transferable status.
 
 The 18 core includes are trusted under the project policy. Production remains
-blocked until focused human review is complete for 21 records: 15 citation-chain
+blocked. Focused human review is complete for the 21 records: 15 citation-chain
 candidates, two uncertain records, and four deep/cold response-enriched
-exclusions selected for false-negative audit.
+exclusions selected for false-negative audit. The reviewer retained one
+`CITATION_CHAIN_CANDIDATE`, confirmed all four audit exclusions, and changed the
+other 16 reviewed records to `EXCLUDE`. The final adjudicated counts are 18
+`CORE_INCLUDE`, zero `TRANSFERABLE_MECHANISM`, one
+`CITATION_CHAIN_CANDIDATE`, zero `UNCERTAIN`, and 61 `EXCLUDE`.
+
+Prompt v6 passed the conservative scope boundary: all 25 warm-water/tropical
+hard negatives were excluded and the focused false-negative audit found no
+silent core exclusion. It did not satisfy the requirement to use the
+citation-chain category sparingly, because 14 of 15 assignments were rejected.
+Production therefore remains blocked pending a tighter prompt-v7 citation-chain
+rule and validation on another zero-overlap sample.
 
 A separate post-run access audit found a frozen lawful public full-document
 location for 31 of the 80 records. The remaining 49 are marked `NO`, meaning
@@ -268,6 +279,7 @@ python step_5/run_prompt_v6_fresh_validation.py \
   --thinking enabled
 python step_5/audit_prompt_v6_fresh_access.py
 python step_5/evaluate_prompt_v6_fresh_validation.py
+python step_5/apply_prompt_v6_fresh_adjudications.py
 ```
 
 Run and evaluate v5 with:
