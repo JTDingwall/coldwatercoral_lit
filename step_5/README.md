@@ -211,6 +211,32 @@ relevant records enter the lawful-retrieval queue for institutional-library,
 interlibrary-loan, repository, or author-copy follow-up. Sci-Hub and similar
 access-control-bypass services are not used.
 
+### Completed v5 adjudication and prompt v6
+
+Human review of the 12 non-core v5 records is complete. The original DeepSeek
+output remains unchanged. A separate adjudicated table records six overrides:
+PEV-006, PEV-017, PEV-019, and PEV-029 changed from
+`TRANSFERABLE_MECHANISM` to `EXCLUDE`; PEV-022 and PEV-024 changed from
+`UNCERTAIN` to `EXCLUDE`. All other model decisions were accepted unchanged.
+The final counts are 13 `CORE_INCLUDE`, zero `TRANSFERABLE_MECHANISM`, two
+`CITATION_CHAIN_CANDIDATE`, four `UNCERTAIN`, and 17 `EXCLUDE`.
+
+Prompt v6 encodes the resulting conservative policy. Warm-water and tropical
+trait similarity, taxonomic similarity, and quantitative dose-response evidence
+are not sufficient for transferability. Such records default to `EXCLUDE`.
+`TRANSFERABLE_MECHANISM` is limited to exceptional non-tropical cold/temperate
+studies with explicit organism, environmental, exposure, and response
+comparability to the target cold-water/deep-sea evidence base. Prompt v6 has not
+yet been independently validated for production.
+The adjudication and prompt hashes are frozen in
+`calibration/positive_enriched_prompt_v6_freeze.json`.
+
+Rebuild the adjudicated outputs with:
+
+```bash
+python step_5/apply_positive_enriched_v5_adjudications.py
+```
+
 Run and evaluate v5 with:
 
 ```bash
@@ -233,6 +259,8 @@ gate in `screening_protocol.md` is satisfied.
 - `prompts/title_abstract_screening_v1.md`: versioned title/abstract prompt.
 - `prompts/title_abstract_screening_v5.md`: conservative trait-focused prompt
   with the citation-chain category.
+- `prompts/title_abstract_screening_v6.md`: adjudicated cold-water-specific
+  transferability policy.
 - `schemas/screening_output.schema.json`: required structured output contract.
 - `schemas/screening_output_v5.schema.json`: five-category v5 output contract.
 - `input_manifest.json`: frozen Stage 4 lineage.

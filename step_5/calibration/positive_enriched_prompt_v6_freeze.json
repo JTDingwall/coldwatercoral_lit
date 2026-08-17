@@ -1,0 +1,49 @@
+{
+  "status": "ADJUDICATED_VALIDATION_REQUIRED",
+  "freeze_date": "2026-08-17",
+  "prompt_file": "step_5/prompts/title_abstract_screening_v6.md",
+  "prompt_sha256": "ef8a27eb7cf1c28c9a596d9c753381d76f03611c2b54ededb4cd5ba9dfe04161",
+  "schema_file": "step_5/schemas/screening_output_v5.schema.json",
+  "schema_sha256": "4fdcde1ce2844011e34c0842413d112fee51878ca2f2379a5089e232033056f6",
+  "source_model_run": "positive-enriched-deepseek-v5-20260817",
+  "human_review_complete": true,
+  "model_output_preserved": true,
+  "adjudication": {
+    "overrides": 6,
+    "accepted_without_change": 30,
+    "override_ids": [
+      "PEV-006",
+      "PEV-017",
+      "PEV-019",
+      "PEV-022",
+      "PEV-024",
+      "PEV-029"
+    ],
+    "adjudicated_classifications_file": "step_5/runs/positive-enriched-deepseek-v5-20260817/positive_enriched_v5_classifications_adjudicated.csv",
+    "adjudicated_classifications_sha256": "f254bac19c03fa026298efe6588a570160191fa80ab77b58f110176c435ba1d5",
+    "adjudication_log_file": "step_5/runs/positive-enriched-deepseek-v5-20260817/positive_enriched_v5_adjudication_log.csv",
+    "adjudication_log_sha256": "b2bc68bcf51b279a466035950eb4bdc165842c4018ec9328bf55c4dae3e53b13",
+    "evaluation_file": "step_5/runs/positive-enriched-deepseek-v5-20260817/positive_enriched_v5_evaluation_adjudicated.json",
+    "evaluation_sha256": "17d02c1f8de95bd782bbfa16c91f9145e9e35f15fee2772b08f1bb9d52c053fa",
+    "lawful_retrieval_queue_file": "step_5/runs/positive-enriched-deepseek-v5-20260817/positive_enriched_v5_lawful_retrieval_queue_adjudicated.csv",
+    "lawful_retrieval_queue_sha256": "6bda6712c6d0d069c65e143dbc01724559d5d118a8e483ad5ad63a76de415dc8"
+  },
+  "classification_counts": {
+    "CORE_INCLUDE": 13,
+    "TRANSFERABLE_MECHANISM": 0,
+    "CITATION_CHAIN_CANDIDATE": 2,
+    "UNCERTAIN": 4,
+    "EXCLUDE": 17
+  },
+  "policy": {
+    "core_include_trusted": true,
+    "warm_water_or_tropical_default": "EXCLUDE",
+    "trait_similarity_alone_is_transferable": false,
+    "transferable_mechanism": "Exceptional non-tropical cold/temperate evidence only; organism, environment, sediment exposure, and response comparability must all be explicit.",
+    "citation_chain_candidate_retained": true,
+    "uncertain_is_permitted_final_category": true
+  },
+  "outstanding_human_classification_review_rows": 0,
+  "production_screening_approved": false,
+  "next_gate": "Independently validate prompt v6 before production screening."
+}

@@ -1,0 +1,39 @@
+{
+  "split": "POSITIVE_ENRICHED_VALIDATION_V5_ADJUDICATED",
+  "created_at": "2026-08-17",
+  "rows": 36,
+  "human_review_complete": true,
+  "model_output_preserved": true,
+  "overrides": 6,
+  "classification_counts": {
+    "CORE_INCLUDE": 13,
+    "TRANSFERABLE_MECHANISM": 0,
+    "CITATION_CHAIN_CANDIDATE": 2,
+    "UNCERTAIN": 4,
+    "EXCLUDE": 17
+  },
+  "accepted_policy": {
+    "all_core_includes_trusted": true,
+    "warm_water_or_tropical_default": "EXCLUDE",
+    "warm_water_trait_similarity_alone_transferable": false,
+    "uncertain_records_retained": [
+      "PEV-009",
+      "PEV-023",
+      "PEV-033",
+      "PEV-036"
+    ],
+    "citation_chain_candidates_retained": [
+      "PEV-007",
+      "PEV-030"
+    ]
+  },
+  "outstanding_classification_review_rows": 0,
+  "lawful_retrieval_queue_rows": 14,
+  "production_screening_approved": false,
+  "production_hold_reason": "Prompt v6 incorporates the completed review but has not yet been independently validated for production.",
+  "outputs": {
+    "adjudicated_classifications": "positive_enriched_v5_classifications_adjudicated.csv",
+    "adjudication_log": "positive_enriched_v5_adjudication_log.csv",
+    "lawful_retrieval_queue": "positive_enriched_v5_lawful_retrieval_queue_adjudicated.csv"
+  }
+}
