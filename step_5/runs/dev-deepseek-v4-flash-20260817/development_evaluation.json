@@ -1,0 +1,68 @@
+{
+  "split": "DEVELOPMENT",
+  "human_labels_file": "step_5/calibration/resolved_human_labels_adjudicated.csv",
+  "locked_validation_evaluated": false,
+  "benchmark_evaluated": false,
+  "expected_rows": 300,
+  "evaluated_rows": 300,
+  "missing_prediction_rows": 0,
+  "human_category_counts": {
+    "CORE_INCLUDE": 5,
+    "EXCLUDE": 288,
+    "TRANSFERABLE_MECHANISM": 2,
+    "UNCERTAIN": 5
+  },
+  "model_category_counts": {
+    "CORE_INCLUDE": 7,
+    "EXCLUDE": 215,
+    "TRANSFERABLE_MECHANISM": 3,
+    "UNCERTAIN": 75
+  },
+  "metrics": {
+    "exact_agreement": 0.7466666666666667,
+    "core_include_recall": 0.8,
+    "combined_core_or_transferable_recall": 0.7142857142857143,
+    "recall_when_uncertain_is_retained_for_manual_review": 1.0,
+    "human_core_or_transferable_silently_excluded": 0,
+    "predicted_include_precision": 0.5,
+    "noninclude_specificity": 0.9829351535836177,
+    "model_uncertain_rate": 0.25,
+    "human_core_n": 5,
+    "human_core_or_transferable_n": 7
+  },
+  "development_prompt_gate": {
+    "complete_300": true,
+    "core_recall_at_least_0_95": false,
+    "combined_recall_at_least_0_95": false,
+    "ready_to_freeze_prompt_and_run_locked_validation": false
+  },
+  "confusion_matrix": {
+    "CORE_INCLUDE": {
+      "CORE_INCLUDE": 4,
+      "TRANSFERABLE_MECHANISM": 0,
+      "UNCERTAIN": 1,
+      "EXCLUDE": 0
+    },
+    "TRANSFERABLE_MECHANISM": {
+      "CORE_INCLUDE": 1,
+      "TRANSFERABLE_MECHANISM": 0,
+      "UNCERTAIN": 1,
+      "EXCLUDE": 0
+    },
+    "UNCERTAIN": {
+      "CORE_INCLUDE": 0,
+      "TRANSFERABLE_MECHANISM": 0,
+      "UNCERTAIN": 5,
+      "EXCLUDE": 0
+    },
+    "EXCLUDE": {
+      "CORE_INCLUDE": 2,
+      "TRANSFERABLE_MECHANISM": 3,
+      "UNCERTAIN": 68,
+      "EXCLUDE": 215
+    }
+  },
+  "caveat": "Development performance is based on only three human CORE_INCLUDE records and two human TRANSFERABLE_MECHANISM records. Covidence NO was mapped to EXCLUDE without four-way adjudication, so apparent false-positive transferable/core predictions require targeted human review before prompt revision.",
+  "priority_adjudication_rows": 8,
+  "priority_adjudication_file": "development_priority_adjudication.csv"
+}

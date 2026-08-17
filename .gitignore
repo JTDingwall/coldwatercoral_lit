@@ -1,5 +1,11 @@
-__pycache__/
-*.pyc
 .env
 .env.*
 !.env.example
+__pycache__/
+*.py[cod]
+
+# Stage 5 transient API payloads and preflight/smoke runs.
+step_5/runs/*/responses/
+step_5/runs/*preflight*/
+step_5/runs/*smoke*/
+step_5/runs/*dryrun*/

@@ -1,0 +1,70 @@
+{
+  "inputs": {
+    "covidence_rows": 407,
+    "covidence_sha256": "febdf795033790e7f0177e50229869b4ab86c61c4f5d4032584be3699fdb785b",
+    "followup_rows": 15,
+    "followup_sha256": "0ca3d132fde04472c63763e2159784628cf33a6c3ac58bc77dc6c9ea85c6322a",
+    "frozen_calibration_rows": 400,
+    "frozen_benchmark_rows": 9
+  },
+  "resolved": {
+    "total_rows": 409,
+    "all_category_counts": {
+      "CORE_INCLUDE": 7,
+      "EXCLUDE": 384,
+      "TRANSFERABLE_MECHANISM": 4,
+      "UNCERTAIN": 14
+    },
+    "split_category_counts": {
+      "DEVELOPMENT": {
+        "CORE_INCLUDE": 3,
+        "EXCLUDE": 287,
+        "TRANSFERABLE_MECHANISM": 2,
+        "UNCERTAIN": 8
+      },
+      "VALIDATION": {
+        "CORE_INCLUDE": 1,
+        "EXCLUDE": 93,
+        "UNCERTAIN": 6
+      },
+      "BENCHMARK_VALIDATION": {
+        "CORE_INCLUDE": 3,
+        "EXCLUDE": 4,
+        "TRANSFERABLE_MECHANISM": 2
+      }
+    },
+    "covidence_deduplicated_rows_resolved": 2,
+    "manual_followup_rows": 15
+  },
+  "benchmark_comparison": {
+    "exact_agreement_count": 7,
+    "disagreement_count": 2,
+    "disagreements": [
+      {
+        "calibration_record_id": "BV-007",
+        "corpus_id": "CWC-4D83BD3A455E",
+        "benchmark_id": "B005",
+        "expected_screening": "CORE_INCLUDE",
+        "human_decision": "EXCLUDE",
+        "exact_agreement": "False",
+        "status": "PROTOCOL_OR_BENCHMARK_REVIEW_REQUIRED"
+      },
+      {
+        "calibration_record_id": "BV-008",
+        "corpus_id": "CWC-104B2C5A7924",
+        "benchmark_id": "B004",
+        "expected_screening": "CORE_INCLUDE",
+        "human_decision": "TRANSFERABLE_MECHANISM",
+        "exact_agreement": "False",
+        "status": "PROTOCOL_OR_BENCHMARK_REVIEW_REQUIRED"
+      }
+    ]
+  },
+  "checks": {
+    "all_409_records_resolved": true,
+    "all_categories_valid": true,
+    "fu06_is_uncertain": true,
+    "validation_rows_not_used_for_development": true,
+    "benchmark_key_not_merged_into_model_inputs": true
+  }
+}

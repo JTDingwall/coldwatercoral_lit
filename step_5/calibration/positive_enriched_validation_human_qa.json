@@ -1,0 +1,23 @@
+{
+  "status": "PASS_WITH_MISSING_REVIEWER_NOTES",
+  "import_date": "2026-08-17",
+  "rows": 36,
+  "unique_validation_ids": 36,
+  "unique_corpus_ids": 36,
+  "metadata_mismatches": 0,
+  "normalized_category_rows": 2,
+  "blank_reviewer_notes": 36,
+  "category_counts": {
+    "CORE_INCLUDE": 15,
+    "EXCLUDE": 19,
+    "TRANSFERABLE_MECHANISM": 2
+  },
+  "human_relevant_n": 17,
+  "model_input_has_human_label_columns": false,
+  "labels_file": "step_5/calibration/positive_enriched_validation_labels.csv",
+  "labels_sha256": "24753c627a7d46e3562b57a41484a1fc0d2e793bd72755919812ab49cfb43511",
+  "model_input_file": "step_5/calibration/positive_enriched_validation_model_input.csv",
+  "model_input_sha256": "1b02457c6124a34648d9993549f7357de4d4bc74e589a542d26ab844d404d7d1",
+  "prompt_v4_file": "step_5/prompts/title_abstract_screening_v4.md",
+  "prompt_v4_sha256": "12926ee6ffe47beae2a4c46c30a46d01c01054cbf949765c3d83155643f3665a"
+}

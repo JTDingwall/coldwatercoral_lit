@@ -1,0 +1,82 @@
+{
+  "split": "VALIDATION",
+  "one_time_locked_validation": true,
+  "human_labels_file": "/workspace/scratch/fe7e46206f3d/corpus_repo/step_5/calibration/resolved_human_labels_adjudicated.csv",
+  "predictions_file": "step_5/runs/validation-deepseek-v4-flash-v3-20260817/parsed_decisions.csv",
+  "expected_rows": 100,
+  "evaluated_rows": 100,
+  "identifier_sets_reconcile": true,
+  "human_category_counts": {
+    "CORE_INCLUDE": 1,
+    "EXCLUDE": 93,
+    "UNCERTAIN": 6
+  },
+  "model_category_counts": {
+    "CORE_INCLUDE": 4,
+    "EXCLUDE": 85,
+    "TRANSFERABLE_MECHANISM": 3,
+    "UNCERTAIN": 8
+  },
+  "metrics": {
+    "exact_agreement": 0.82,
+    "core_include_recall": 1.0,
+    "core_include_recall_95pct_wilson": [
+      0.20654931437723745,
+      1.0
+    ],
+    "combined_core_or_transferable_recall": 1.0,
+    "combined_recall_95pct_wilson": [
+      0.20654931437723745,
+      1.0
+    ],
+    "recall_when_uncertain_is_retained_for_manual_review": 1.0,
+    "human_core_or_transferable_silently_excluded": 0,
+    "predicted_include_precision": 0.14285714285714285,
+    "noninclude_specificity": 0.9393939393939394,
+    "negative_predictive_value": 1.0,
+    "model_uncertain_rate": 0.08,
+    "human_core_n": 1,
+    "human_core_or_transferable_n": 1
+  },
+  "acceptance_gate": {
+    "complete_100": true,
+    "identifiers_reconcile": true,
+    "core_recall_at_least_0_95": true,
+    "combined_recall_at_least_0_95": true,
+    "no_relevant_record_silently_excluded": true,
+    "low_confidence_routes_to_uncertain": true,
+    "validation_gate_passed": true
+  },
+  "confusion_matrix": {
+    "CORE_INCLUDE": {
+      "CORE_INCLUDE": 1,
+      "TRANSFERABLE_MECHANISM": 0,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 0
+    },
+    "TRANSFERABLE_MECHANISM": {
+      "CORE_INCLUDE": 0,
+      "TRANSFERABLE_MECHANISM": 0,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 0
+    },
+    "UNCERTAIN": {
+      "CORE_INCLUDE": 1,
+      "TRANSFERABLE_MECHANISM": 1,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 4
+    },
+    "EXCLUDE": {
+      "CORE_INCLUDE": 2,
+      "TRANSFERABLE_MECHANISM": 2,
+      "UNCERTAIN": 8,
+      "EXCLUDE": 81
+    }
+  },
+  "disagreement_rows": 18,
+  "disagreement_file": "validation_disagreements.csv",
+  "priority_adjudication_rows": 10,
+  "priority_adjudication_file": "validation_priority_adjudication.csv",
+  "production_recommendation": "HOLD: the preregistered point-estimate validation gate passes, but the locked sample contains only one human relevant record. Run the frozen prompt on the separately blinded, positive-enriched benchmark set and resolve material validation-label disagreements before production.",
+  "caveat": "Recall estimates have small positive denominators; Wilson intervals are reported to show uncertainty. The protocol's point-estimate gate remains binding."
+}

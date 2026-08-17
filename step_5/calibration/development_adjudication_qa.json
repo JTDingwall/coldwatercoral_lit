@@ -1,0 +1,39 @@
+{
+  "input_adjudication_file": "../upload/01-development_priority_adjudication.csv",
+  "input_adjudication_sha256": "825c133ca55b3567466b29b208a8cae4c16b6da5de1645513af9a42b3fc9b3f4",
+  "adjudicated_rows": 11,
+  "changed_category_rows": 3,
+  "resolved_human_rows": 400,
+  "resolved_combined_rows": 409,
+  "split_category_counts": {
+    "DEVELOPMENT": {
+      "CORE_INCLUDE": 5,
+      "EXCLUDE": 288,
+      "TRANSFERABLE_MECHANISM": 2,
+      "UNCERTAIN": 5
+    },
+    "VALIDATION": {
+      "CORE_INCLUDE": 1,
+      "EXCLUDE": 93,
+      "UNCERTAIN": 6
+    },
+    "BENCHMARK_VALIDATION": {
+      "CORE_INCLUDE": 3,
+      "EXCLUDE": 4,
+      "TRANSFERABLE_MECHANISM": 2
+    }
+  },
+  "all_category_counts": {
+    "CORE_INCLUDE": 9,
+    "EXCLUDE": 385,
+    "TRANSFERABLE_MECHANISM": 4,
+    "UNCERTAIN": 11
+  },
+  "checks": {
+    "all_11_adjudications_applied": true,
+    "all_400_human_labels_preserved": true,
+    "all_409_combined_labels_present": true,
+    "validation_labels_unchanged": true,
+    "benchmark_labels_unchanged": true
+  }
+}

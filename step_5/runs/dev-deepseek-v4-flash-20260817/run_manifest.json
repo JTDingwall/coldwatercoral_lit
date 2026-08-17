@@ -1,0 +1,41 @@
+{
+  "run_id": "dev-deepseek-v4-flash-20260817",
+  "created_at": "2026-08-17T17:11:15.193271+00:00",
+  "mode": "development_screening",
+  "provider": "DeepSeek",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-v4-flash",
+  "api_key_written": false,
+  "input_file": "step_5/calibration/calibration_sample.csv",
+  "input_sha256": "e3058bd041be56057a62dfa52c8c8645765b1024bfbce2268c6e74de30dd44aa",
+  "input_split": "DEVELOPMENT",
+  "input_rows_available": 300,
+  "input_rows_selected": 300,
+  "validation_rows_loaded": 0,
+  "benchmark_rows_loaded": 0,
+  "benchmark_key_loaded": false,
+  "prompt_file": "step_5/prompts/title_abstract_screening_v1.md",
+  "prompt_sha256": "fa3fedf9364ef808b40f728a227400dbc7aa7a56c49b3daa7f812bbf988cf14b",
+  "schema_file": "step_5/schemas/screening_output.schema.json",
+  "schema_sha256": "951a43c664ba47c402932f2bf06ad50f5f3532d5a1cbf73e9989a3b07de61ff7",
+  "parameters": {
+    "temperature": 0,
+    "max_tokens": 1200,
+    "thinking": "disabled",
+    "response_format": "json_object",
+    "workers": 6,
+    "max_retries": 3,
+    "timeout_seconds": 120
+  },
+  "status": "completed",
+  "completed_at": "2026-08-17T17:17:18.078310+00:00",
+  "succeeded_rows": 300,
+  "failed_rows": 0,
+  "failed_calibration_record_ids": [],
+  "usage": {
+    "prompt_tokens": 500424,
+    "completion_tokens": 52192,
+    "total_tokens": 552616
+  },
+  "parsed_decisions_sha256": "bd5aa6bf4d484c3ff9185c9ae75c205fbf9f019364facc06de2cc92090aa7a31"
+}

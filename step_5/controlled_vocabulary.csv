@@ -1,0 +1,26 @@
+vocabulary_type,code,label,definition,allowed_with
+SCREENING_DECISION,CORE_INCLUDE,Core include,"Directly relevant cold-water coral or sponge evidence, or a broader benthic-community study with separately reported in-scope coral or sponge results.",
+SCREENING_DECISION,TRANSFERABLE_MECHANISM,Transferable mechanism,"Non-core evidence with an explicit mechanism, morphology-response relationship, or exposure-response pattern clearly transferable to cold-water coral or sponge vulnerability.",
+SCREENING_DECISION,EXCLUDE,Exclude,The available evidence demonstrates that the record is outside the frozen scope.,
+SCREENING_DECISION,UNCERTAIN,Uncertain,Available metadata is insufficient or ambiguous; additional metadata or human review is required.,
+EXCLUSION_REASON,X01_ORGANISM_OUT_OF_SCOPE,Organism out of scope,"No coral or sponge is studied, and no in-scope coral or sponge result is separately reported.",EXCLUDE
+EXCLUSION_REASON,X02_TROPICAL_NO_TRANSFER,Tropical without transferable mechanism,"Tropical-only evidence with no clear sediment-related mechanism, morphology-response relationship, or exposure-response pattern transferable to cold-water corals or sponges.",EXCLUDE
+EXCLUSION_REASON,X03_STRESSOR_OUT_OF_SCOPE,Stressor out of scope,"The study does not evaluate an in-scope sediment-related stressor.",EXCLUDE
+EXCLUSION_REASON,X04_SEDIMENT_PATHWAY_NOT_EXPLICIT,Sediment pathway not explicit,"Seabed disturbance, development, climate, pollution, or another pressure is discussed without sedimentation being an explicit pathway.",EXCLUDE
+EXCLUSION_REASON,X05_RESPONSE_OUT_OF_SCOPE,Response out of scope,"No in-scope biological response, mechanism, exposure-response relationship, threshold, or recovery outcome is evaluated.",EXCLUDE
+EXCLUSION_REASON,X06_SOURCE_NOT_SUBSTANTIVE,Source not substantive,"The item is only a citation stub, index page, navigation page, brief promotional item, or other non-substantive source and does not itself provide usable study or assessment information.",EXCLUDE
+EXCLUSION_REASON,X07_NOT_A_SOURCE,Not a source,"The record is not a document or source that can be screened for the review.",EXCLUDE
+EXCLUSION_REASON,X08_OTHER_SCOPE_FAILURE,Other documented scope failure,"A different frozen eligibility requirement is demonstrably not met; the rationale must state which requirement failed.",EXCLUDE
+UNCERTAINTY_REASON,U01_MISSING_ABSTRACT,Missing abstract,"Title and available metadata are insufficient and no abstract or informative snippet is available.",UNCERTAIN
+UNCERTAINTY_REASON,U02_AMBIGUOUS_ORGANISM,Ambiguous organism,"It is unclear whether an in-scope coral or sponge is studied or separately reported.",UNCERTAIN
+UNCERTAINTY_REASON,U03_AMBIGUOUS_STRESSOR,Ambiguous stressor,"It is unclear whether sediment exposure or a sediment pathway is evaluated.",UNCERTAIN
+UNCERTAINTY_REASON,U04_AMBIGUOUS_RESPONSE,Ambiguous response,"It is unclear whether an in-scope biological response is evaluated.",UNCERTAIN
+UNCERTAINTY_REASON,U05_AMBIGUOUS_TRANSFERABILITY,Ambiguous transferability,"A tropical or non-core study may contain a transferable mechanism, but the available metadata is insufficient to decide.",UNCERTAIN
+UNCERTAINTY_REASON,U06_CONFLICTING_METADATA,Conflicting metadata,"Title, abstract, identifiers, or source metadata conflict in a way that prevents a defensible decision.",UNCERTAIN
+SCREENING_SOURCE,TITLE_ONLY,Title only,Decision based only on the title and basic bibliographic metadata.,
+SCREENING_SOURCE,TITLE_ABSTRACT,Title and abstract,Decision based on the title and abstract or substantive indexed summary.,
+SCREENING_SOURCE,LANDING_PAGE,Landing page,Decision used a substantive public landing page.,
+SCREENING_SOURCE,FULL_TEXT,Full text,Decision used the full document.,
+CONFIDENCE,HIGH,High,"The cited metadata directly supports the category with no material ambiguity.",
+CONFIDENCE,MEDIUM,Medium,"The category is supported but one non-critical detail is indirect or incomplete.",
+CONFIDENCE,LOW,Low,"Material ambiguity remains; production logic must route this record to UNCERTAIN.",

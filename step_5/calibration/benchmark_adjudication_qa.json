@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "adjudication_date": "2026-08-17",
+  "active_benchmark_rows": 9,
+  "frozen_stage4_commit": "9fcb4f3834cbb15c43ac8a1f23dab6142e68185d",
+  "expected_category_counts": {
+    "CORE_INCLUDE": 4,
+    "EXCLUDE": 3,
+    "TRANSFERABLE_MECHANISM": 2
+  },
+  "replacement": {
+    "benchmark_id": "B005",
+    "retired_corpus_id": "CWC-4D83BD3A455E",
+    "retired_final_category": "EXCLUDE",
+    "replacement_corpus_id": "CWC-B27727ED4386",
+    "replacement_doi": "10.1080/15287394.2018.1444375",
+    "replacement_expected_category": "CORE_INCLUDE"
+  },
+  "checks": {
+    "active_benchmark_count_is_9": true,
+    "active_benchmark_ids_unique": true,
+    "active_corpus_ids_unique": true,
+    "active_records_exist_in_frozen_corpus": true,
+    "no_overlap_with_400_calibration_records": true,
+    "b004_is_transferable_mechanism": true,
+    "b005_uses_substantive_replacement": true,
+    "retired_usgs_webpage_not_active": true,
+    "key_blinded_and_resolved_ids_align": true,
+    "blinded_file_contains_no_human_decisions": true,
+    "benchmark_human_conflicts_resolved": true
+  },
+  "unresolved_conflicts": []
+}

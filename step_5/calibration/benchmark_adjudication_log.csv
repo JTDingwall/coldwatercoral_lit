@@ -1,0 +1,4 @@
+adjudication_id,benchmark_id,action,old_corpus_id,new_corpus_id,old_expected_screening,new_expected_screening,decision_basis,decision_date
+BA-001,B004,RELABEL_EXPECTED_CATEGORY,CWC-104B2C5A7924,CWC-104B2C5A7924,CORE_INCLUDE,TRANSFERABLE_MECHANISM,User approved benchmark recommendation,2026-08-17
+BA-002,B005,RETIRE_NON_SUBSTANTIVE_SOURCE,CWC-4D83BD3A455E,,CORE_INCLUDE,EXCLUDE,"USGS record is a project news webpage, not a substantive study",2026-08-17
+BA-003,B005,ADD_SUBSTANTIVE_REPLACEMENT,CWC-4D83BD3A455E,CWC-B27727ED4386,EXCLUDE,CORE_INCLUDE,Baussant et al. 2018 is a direct Lophelia pertusa drill-cuttings exposure study from the related research programme,2026-08-17

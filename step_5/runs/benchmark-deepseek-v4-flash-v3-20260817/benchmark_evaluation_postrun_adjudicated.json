@@ -1,0 +1,35 @@
+{
+  "status": "FAIL_GENUINE_MODEL_FALSE_NEGATIVE",
+  "adjudication_date": "2026-08-17",
+  "approved_recommendations_applied": 3,
+  "historical_model_run_preserved": true,
+  "postrun_expected_category_counts": {
+    "CORE_INCLUDE": 4,
+    "EXCLUDE": 2,
+    "TRANSFERABLE_MECHANISM": 2,
+    "UNCERTAIN": 1
+  },
+  "metrics": {
+    "exact_agreement": 0.8888888888888888,
+    "core_include_recall": 1.0,
+    "combined_core_or_transferable_recall": 0.8333333333333334,
+    "relevant_benchmarks_silently_excluded": 1,
+    "negative_control_specificity": 1.0,
+    "core_n": 4,
+    "core_or_transferable_n": 6,
+    "negative_control_n": 2
+  },
+  "genuine_model_failure_count": 1,
+  "genuine_model_failures": [
+    {
+      "benchmark_id": "B009",
+      "calibration_record_id": "BV-001",
+      "expected_screening": "TRANSFERABLE_MECHANISM",
+      "model_decision": "EXCLUDE",
+      "title": "Detecting sedimentation impacts to coral reefs resulting from dredging the Port of Miami, Florida USA"
+    }
+  ],
+  "replacement_candidate_file": "step_5/calibration/benchmark_replacement_candidates.csv",
+  "replacement_candidate_tested": false,
+  "production_screening_approved": false
+}

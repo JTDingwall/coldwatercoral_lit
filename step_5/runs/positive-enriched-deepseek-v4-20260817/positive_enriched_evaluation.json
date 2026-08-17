@@ -1,0 +1,76 @@
+{
+  "split": "POSITIVE_ENRICHED_VALIDATION",
+  "expected_rows": 36,
+  "evaluated_rows": 36,
+  "identifier_sets_reconcile": true,
+  "human_category_counts": {
+    "CORE_INCLUDE": 15,
+    "EXCLUDE": 19,
+    "TRANSFERABLE_MECHANISM": 2
+  },
+  "model_category_counts": {
+    "CORE_INCLUDE": 14,
+    "EXCLUDE": 11,
+    "TRANSFERABLE_MECHANISM": 9,
+    "UNCERTAIN": 2
+  },
+  "metrics": {
+    "exact_agreement": 0.6666666666666666,
+    "core_include_recall": 0.8,
+    "core_include_recall_95pct_wilson": [
+      0.5481455128483065,
+      0.9295245065301844
+    ],
+    "combined_core_or_transferable_recall": 0.8823529411764706,
+    "combined_recall_95pct_wilson": [
+      0.6566364940511412,
+      0.9671202262362074
+    ],
+    "recall_when_uncertain_is_retained_for_manual_review": 0.9411764705882353,
+    "human_core_or_transferable_silently_excluded": 1,
+    "predicted_include_precision": 0.6521739130434783,
+    "noninclude_specificity": 0.5789473684210527,
+    "negative_predictive_value": 0.8461538461538461,
+    "model_uncertain_rate": 0.05555555555555555,
+    "human_core_n": 15,
+    "human_core_or_transferable_n": 17
+  },
+  "acceptance_gate": {
+    "complete_36": true,
+    "core_recall_at_least_0_95": false,
+    "combined_recall_at_least_0_95": false,
+    "no_relevant_record_silently_excluded": false,
+    "low_confidence_routes_to_uncertain": true,
+    "positive_enriched_gate_passed": false
+  },
+  "confusion_matrix": {
+    "CORE_INCLUDE": {
+      "CORE_INCLUDE": 12,
+      "TRANSFERABLE_MECHANISM": 1,
+      "UNCERTAIN": 1,
+      "EXCLUDE": 1
+    },
+    "TRANSFERABLE_MECHANISM": {
+      "CORE_INCLUDE": 0,
+      "TRANSFERABLE_MECHANISM": 2,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 0
+    },
+    "UNCERTAIN": {
+      "CORE_INCLUDE": 0,
+      "TRANSFERABLE_MECHANISM": 0,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 0
+    },
+    "EXCLUDE": {
+      "CORE_INCLUDE": 2,
+      "TRANSFERABLE_MECHANISM": 6,
+      "UNCERTAIN": 1,
+      "EXCLUDE": 10
+    }
+  },
+  "disagreement_rows": 12,
+  "priority_adjudication_rows": 11,
+  "priority_adjudication_file": "positive_enriched_priority_adjudication.csv",
+  "human_label_caveat": "All 36 human reviewer-note fields were blank; evaluation uses the submitted categorical decisions without invented rationales."
+}

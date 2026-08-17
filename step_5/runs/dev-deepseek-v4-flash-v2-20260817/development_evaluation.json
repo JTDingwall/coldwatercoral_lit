@@ -1,0 +1,68 @@
+{
+  "split": "DEVELOPMENT",
+  "human_labels_file": "step_5/calibration/resolved_human_labels_adjudicated.csv",
+  "locked_validation_evaluated": false,
+  "benchmark_evaluated": false,
+  "expected_rows": 300,
+  "evaluated_rows": 300,
+  "missing_prediction_rows": 0,
+  "human_category_counts": {
+    "CORE_INCLUDE": 5,
+    "EXCLUDE": 288,
+    "TRANSFERABLE_MECHANISM": 2,
+    "UNCERTAIN": 5
+  },
+  "model_category_counts": {
+    "CORE_INCLUDE": 7,
+    "EXCLUDE": 266,
+    "TRANSFERABLE_MECHANISM": 11,
+    "UNCERTAIN": 16
+  },
+  "metrics": {
+    "exact_agreement": 0.9033333333333333,
+    "core_include_recall": 0.8,
+    "combined_core_or_transferable_recall": 1.0,
+    "recall_when_uncertain_is_retained_for_manual_review": 1.0,
+    "human_core_or_transferable_silently_excluded": 0,
+    "predicted_include_precision": 0.3888888888888889,
+    "noninclude_specificity": 0.962457337883959,
+    "model_uncertain_rate": 0.05333333333333334,
+    "human_core_n": 5,
+    "human_core_or_transferable_n": 7
+  },
+  "development_prompt_gate": {
+    "complete_300": true,
+    "core_recall_at_least_0_95": false,
+    "combined_recall_at_least_0_95": true,
+    "ready_to_freeze_prompt_and_run_locked_validation": false
+  },
+  "confusion_matrix": {
+    "CORE_INCLUDE": {
+      "CORE_INCLUDE": 4,
+      "TRANSFERABLE_MECHANISM": 1,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 0
+    },
+    "TRANSFERABLE_MECHANISM": {
+      "CORE_INCLUDE": 0,
+      "TRANSFERABLE_MECHANISM": 2,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 0
+    },
+    "UNCERTAIN": {
+      "CORE_INCLUDE": 1,
+      "TRANSFERABLE_MECHANISM": 1,
+      "UNCERTAIN": 1,
+      "EXCLUDE": 2
+    },
+    "EXCLUDE": {
+      "CORE_INCLUDE": 2,
+      "TRANSFERABLE_MECHANISM": 7,
+      "UNCERTAIN": 15,
+      "EXCLUDE": 264
+    }
+  },
+  "caveat": "Development performance is based on only 5 human CORE_INCLUDE records and 2 human TRANSFERABLE_MECHANISM records. Interpret rates with the small positive denominator and inspect residual disagreements before freezing the prompt.",
+  "residual_disagreement_rows": 14,
+  "residual_disagreement_file": "development_residual_disagreements.csv"
+}

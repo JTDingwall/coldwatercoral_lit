@@ -1,0 +1,36 @@
+name: Run citation chaining
+
+on:
+  push:
+    paths:
+      - step_4/run_citation_chaining.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: step-4-citation-chaining
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run two-generation citation chaining
+        run: python step_4/run_citation_chaining.py --max-generation 2
+      - name: Rebuild and validate candidate corpus
+        run: python step_4/build_candidate_corpus.py
+      - name: Commit generated Stage 5 outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add step_4/citation_chaining step_4/corpus
+          git diff --cached --quiet && exit 0
+          git commit -m "Complete Stage 5 citation chaining"
+          git push

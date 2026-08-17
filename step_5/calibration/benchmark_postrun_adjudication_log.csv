@@ -1,0 +1,4 @@
+adjudication_id,benchmark_id,action,old_expected_screening,new_expected_screening,decision_basis,decision_date
+BA-POST-001,B009,KEEP_EXPECTED_CATEGORY_MODEL_FALSE_NEGATIVE,TRANSFERABLE_MECHANISM,TRANSFERABLE_MECHANISM,Approved: Port of Miami remains the explicit project example of transferable dredging-related sediment accumulation and burial impacts.,2026-08-17
+BA-POST-002,B004,TITLE_ONLY_INPUT_TO_UNCERTAIN_AND_ADD_ENRICHED_REPLACEMENT,TRANSFERABLE_MECHANISM,UNCERTAIN,Approved: the exact model input had no abstract and cannot support a defensible transferable decision under conservative screening rules.,2026-08-17
+BA-POST-003,B006,RELABEL_TO_TRANSFERABLE_MECHANISM,EXCLUDE,TRANSFERABLE_MECHANISM,"Approved: the abstract separately evaluates sedimentation and turbidity against coral growth, survival, reproduction, and recruitment.",2026-08-17

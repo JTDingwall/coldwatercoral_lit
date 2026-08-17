@@ -1,0 +1,68 @@
+{
+  "split": "BENCHMARK_VALIDATION",
+  "one_time_benchmark_validation": true,
+  "expected_rows": 9,
+  "evaluated_rows": 9,
+  "identifier_sets_reconcile": true,
+  "expected_category_counts": {
+    "CORE_INCLUDE": 4,
+    "EXCLUDE": 3,
+    "TRANSFERABLE_MECHANISM": 2
+  },
+  "model_category_counts": {
+    "CORE_INCLUDE": 4,
+    "EXCLUDE": 3,
+    "TRANSFERABLE_MECHANISM": 1,
+    "UNCERTAIN": 1
+  },
+  "metrics": {
+    "exact_agreement": 0.6666666666666666,
+    "core_include_recall": 1.0,
+    "combined_core_or_transferable_recall": 0.6666666666666666,
+    "recall_when_uncertain_is_retained_for_manual_review": 0.8333333333333334,
+    "relevant_benchmarks_silently_excluded": 1,
+    "negative_control_specificity": 0.6666666666666666,
+    "core_n": 4,
+    "core_or_transferable_n": 6,
+    "negative_control_n": 3
+  },
+  "acceptance_gate": {
+    "complete_9": true,
+    "identifiers_reconcile": true,
+    "core_recall_at_least_0_95": true,
+    "combined_recall_at_least_0_95": false,
+    "all_negative_controls_excluded": false,
+    "no_relevant_benchmark_silently_excluded": false,
+    "low_confidence_routes_to_uncertain": true,
+    "benchmark_gate_passed": false
+  },
+  "confusion_matrix": {
+    "CORE_INCLUDE": {
+      "CORE_INCLUDE": 4,
+      "TRANSFERABLE_MECHANISM": 0,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 0
+    },
+    "TRANSFERABLE_MECHANISM": {
+      "CORE_INCLUDE": 0,
+      "TRANSFERABLE_MECHANISM": 0,
+      "UNCERTAIN": 1,
+      "EXCLUDE": 1
+    },
+    "UNCERTAIN": {
+      "CORE_INCLUDE": 0,
+      "TRANSFERABLE_MECHANISM": 0,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 0
+    },
+    "EXCLUDE": {
+      "CORE_INCLUDE": 0,
+      "TRANSFERABLE_MECHANISM": 1,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 2
+    }
+  },
+  "disagreement_rows": 3,
+  "disagreement_file": "benchmark_priority_adjudication.csv",
+  "production_recommendation": "BLOCK: the frozen prompt silently excluded one expected transferable benchmark and failed the combined-recall and negative-control gates. Adjudicate the three benchmark conflicts, then design a new independent positive-enriched validation set before changing or approving the workflow."
+}

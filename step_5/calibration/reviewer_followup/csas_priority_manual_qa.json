@@ -1,0 +1,21 @@
+{
+  "priority_unmatched_rows": 4,
+  "provisional_categories": {
+    "CORE_INCLUDE": 1,
+    "UNCERTAIN": 3
+  },
+  "supplementary_seeds": 4,
+  "definite_in_scope_gap": [
+    "CSAS-269"
+  ],
+  "requires_human_or_scope_ruling": [
+    "CSAS-094",
+    "CSAS-128",
+    "CSAS-146"
+  ],
+  "checks": {
+    "all_four_priority_nonmatches_adjudicated": true,
+    "frozen_stage4_corpus_not_modified": true,
+    "supplementary_layer_separate": true
+  }
+}

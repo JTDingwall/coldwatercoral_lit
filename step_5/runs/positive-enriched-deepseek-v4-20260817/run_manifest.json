@@ -1,0 +1,41 @@
+{
+  "run_id": "positive-enriched-deepseek-v4-20260817",
+  "created_at": "2026-08-17T19:35:30.946591+00:00",
+  "mode": "positive_enriched_validation_screening",
+  "provider": "DeepSeek",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-v4-flash",
+  "api_key_written": false,
+  "input_file": "step_5/calibration/positive_enriched_validation_model_input.csv",
+  "input_sha256": "1b02457c6124a34648d9993549f7357de4d4bc74e589a542d26ab844d404d7d1",
+  "input_split": "POSITIVE_ENRICHED_VALIDATION",
+  "input_rows_selected": 36,
+  "human_labels_loaded": false,
+  "benchmark_key_loaded": false,
+  "prior_calibration_rows_loaded": 0,
+  "forbidden_columns_present": false,
+  "prompt_file": "step_5/prompts/title_abstract_screening_v4.md",
+  "prompt_sha256": "12926ee6ffe47beae2a4c46c30a46d01c01054cbf949765c3d83155643f3665a",
+  "frozen_prompt_sha256": "12926ee6ffe47beae2a4c46c30a46d01c01054cbf949765c3d83155643f3665a",
+  "prompt_hash_matches_freeze": true,
+  "parameters": {
+    "temperature": 0,
+    "max_tokens": 1200,
+    "thinking": "disabled",
+    "response_format": "json_object",
+    "workers": 4,
+    "max_retries": 3,
+    "timeout_seconds": 120
+  },
+  "status": "completed",
+  "completed_at": "2026-08-17T19:36:38.600893+00:00",
+  "succeeded_rows": 36,
+  "failed_rows": 0,
+  "failed_calibration_record_ids": [],
+  "usage": {
+    "prompt_tokens": 92084,
+    "completion_tokens": 6787,
+    "total_tokens": 98871
+  },
+  "parsed_decisions_sha256": "ed63ea7faeffa69bf7724687e3b19f21754b1da06dfdda3e58fe2c336a76cc62"
+}

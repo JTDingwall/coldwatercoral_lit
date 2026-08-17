@@ -1,0 +1,42 @@
+{
+  "benchmark_rows": 9,
+  "candidate_corpus_rows": 7960,
+  "results_by_benchmark_type": {
+    "NEGATIVE_TROPICAL": {
+      "total": 3,
+      "initially_recovered": 1,
+      "recovered_after_remediation": 0,
+      "accounted": 1
+    },
+    "POSITIVE_CORE": {
+      "total": 5,
+      "initially_recovered": 3,
+      "recovered_after_remediation": 1,
+      "accounted": 4
+    },
+    "TRANSFERABLE_MECHANISM": {
+      "total": 1,
+      "initially_recovered": 1,
+      "recovered_after_remediation": 0,
+      "accounted": 1
+    }
+  },
+  "positive_core_initially_recovered": 3,
+  "positive_core_recovered_after_remediation": 1,
+  "positive_core_accounted": 4,
+  "positive_core_total": 5,
+  "positive_core_initial_independent_recovery_complete": false,
+  "positive_core_recovery_check_complete": false,
+  "misses_total": 3,
+  "revised_search_required": true,
+  "citation_chain_qa_available": false,
+  "checks": {
+    "benchmark_ids_unique": true,
+    "all_benchmark_rows_reported": true,
+    "automatic_recovery_uses_exact_evidence_only": true,
+    "all_recovered_rows_have_corpus_ids": true,
+    "citation_chain_excluded_benchmark_seed_source": true,
+    "candidate_corpus_not_modified": true,
+    "no_relevance_screening_performed": true
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "seed": "coldwatercoral-stage5-calibration-v1",
+  "input": {
+    "candidate_corpus_rows": 43307,
+    "candidate_corpus_sha256": "dbc6fdbfca62571b69303212453fae0afacdda0c7a7b1172ca968a6e0dc81467",
+    "provenance_rows": 58398,
+    "provenance_sha256": "dbb5c33d14488a4fbf321b2d527d9d1ab74a60057c65d9394bd5be172c55f843",
+    "benchmark_rows": 9
+  },
+  "calibration": {
+    "sample_rows": 400,
+    "development_rows": 300,
+    "validation_rows": 100,
+    "benchmark_validation_rows": 9,
+    "by_primary_family": {
+      "MECH_FEEDING_MUCUS_CORAL": 52,
+      "MECH_FEEDING_PUMPING_SPONGE": 33,
+      "RESP_THRESHOLD_RECOVERY": 49,
+      "SED_DEPOSITION": 71,
+      "SED_DREDGING": 51,
+      "SED_DRILLING": 34,
+      "SED_SUSPENDED": 72,
+      "SED_TAILINGS": 38
+    },
+    "by_system_stratum": {
+      "CITATION_CHAINING": 146,
+      "GREY_LITERATURE": 46,
+      "MULTI_SCHOLARLY": 48,
+      "OPENALEX": 55,
+      "SEMANTIC_SCHOLAR": 52,
+      "WEB_OF_SCIENCE": 53
+    },
+    "by_signal_tier": {
+      "NEITHER_SIGNAL": 105,
+      "ORGANISM_AND_STRESSOR": 102,
+      "ORGANISM_ONLY": 125,
+      "STRESSOR_ONLY": 68
+    },
+    "by_metadata_stratum": {
+      "TITLE_ABSTRACT": 204,
+      "TITLE_ONLY": 196
+    },
+    "by_full_text_status": {
+      "LIKELY_FULL_DOCUMENT_URL": 23,
+      "NOT_IDENTIFIED": 205,
+      "OPEN_ACCESS_LANDING_PAGE": 68,
+      "OPEN_ACCESS_PDF": 104
+    },
+    "by_document_type": {
+      "": 36,
+      "CPAPER": 1,
+      "JOUR": 15,
+      "JournalArticle": 5,
+      "Review": 11,
+      "Review; JournalArticle": 1,
+      "article": 187,
+      "book": 5,
+      "book-chapter": 13,
+      "book-review": 1,
+      "conference-abstract": 2,
+      "conference-paper": 13,
+      "conference_or_proceedings": 1,
+      "dataset": 1,
+      "dissertation": 25,
+      "editorial": 1,
+      "erratum": 1,
+      "government_report": 3,
+      "journal_or_publisher_page": 3,
+      "monitoring_report": 7,
+      "news_article": 1,
+      "other": 19,
+      "paratext": 1,
+      "peer-review": 6,
+      "preprint": 16,
+      "project_or_program_page": 9,
+      "reference-entry": 1,
+      "regulator_assessment": 1,
+      "report": 10,
+      "repository_record": 2,
+      "review": 1,
+      "thesis_or_dissertation": 1
+    }
+  },
+  "checks": {
+    "authoritative_corpus_count": true,
+    "authoritative_provenance_count": true,
+    "sample_size_400": true,
+    "development_size_300": true,
+    "validation_size_100": true,
+    "sample_corpus_ids_unique": true,
+    "benchmarks_excluded_from_calibration": true,
+    "all_benchmarks_in_blinded_set": true,
+    "benchmark_expected_labels_absent_from_blinded_file": true,
+    "human_labels_blank": true,
+    "no_relevance_screening_performed": true
+  }
+}

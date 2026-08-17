@@ -1,0 +1,50 @@
+{
+  "stage": 5,
+  "frozen_date": "2026-08-14",
+  "timezone": "America/Vancouver",
+  "repository": "JTDingwall/coldwatercoral_lit",
+  "stage4_commit": "9fcb4f3834cbb15c43ac8a1f23dab6142e68185d",
+  "inputs": {
+    "candidate_corpus": {
+      "path": "step_4/corpus/candidate_corpus.csv",
+      "git_blob_sha": "d0ed8d90b86dd4e85eb5bb75a59507412006020a",
+      "bytes": 36404018,
+      "expected_rows": 43307
+    },
+    "candidate_corpus_provenance": {
+      "path": "step_4/corpus/candidate_corpus_provenance.csv",
+      "git_blob_sha": "a26b533c4ec4e281c1ad5c432196601ec40f5b04",
+      "bytes": 33343928,
+      "expected_rows": 58398
+    },
+    "benchmark_sources": {
+      "path": "step_4/benchmark_sources.csv",
+      "git_blob_sha": "2f0a8563da01175a05106da1601555331ce16c36",
+      "expected_rows": 9
+    },
+    "benchmark_recovery": {
+      "path": "step_4/benchmark_recovery/benchmark_recovery.csv",
+      "git_blob_sha": "729dc569f74c22d82a3e3ff5711d1818ad1ce464",
+      "expected_rows": 9
+    },
+    "stage4_qa": {
+      "path": "step_4/corpus/corpus_qa.json",
+      "git_blob_sha": "245b0dda1145a091fa3c598cf3e1f510d30822b0"
+    }
+  },
+  "frozen_rules": {
+    "benchmark_labels_hidden_from_model": true,
+    "stage4_corpus_read_only": true,
+    "preserve_query_level_provenance": true,
+    "screening_only": true,
+    "prohibited_outputs": [
+      "evidence interpretation",
+      "evidence synthesis",
+      "claims extraction",
+      "data extraction",
+      "trait coding",
+      "threshold estimation",
+      "vulnerability scoring"
+    ]
+  }
+}
