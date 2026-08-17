@@ -226,8 +226,10 @@ trait similarity, taxonomic similarity, and quantitative dose-response evidence
 are not sufficient for transferability. Such records default to `EXCLUDE`.
 `TRANSFERABLE_MECHANISM` is limited to exceptional non-tropical cold/temperate
 studies with explicit organism, environmental, exposure, and response
-comparability to the target cold-water/deep-sea evidence base. Prompt v6 has not
-yet been independently validated for production.
+comparability to the target cold-water/deep-sea evidence base. Prompt v6 has now
+been independently tested on a fresh 80-record validation sample with zero
+overlap by corpus identifier, normalized title, or DOI with prior calibration,
+benchmark, and positive-enriched validation sets.
 The adjudication and prompt hashes are frozen in
 `calibration/positive_enriched_prompt_v6_freeze.json`.
 
@@ -235,6 +237,37 @@ Rebuild the adjudicated outputs with:
 
 ```bash
 python step_5/apply_positive_enriched_v5_adjudications.py
+```
+
+### Fresh prompt-v6 validation
+
+The authorized DeepSeek validation run completed successfully for all 80 frozen
+records, with zero malformed or failed responses and 284,838 total tokens. The
+model assigned 18 `CORE_INCLUDE`, zero `TRANSFERABLE_MECHANISM`, 15
+`CITATION_CHAIN_CANDIDATE`, two `UNCERTAIN`, and 45 `EXCLUDE`. All 25
+warm-water/tropical hard negatives were excluded, and none was assigned core or
+transferable status.
+
+The 18 core includes are trusted under the project policy. Production remains
+blocked until focused human review is complete for 21 records: 15 citation-chain
+candidates, two uncertain records, and four deep/cold response-enriched
+exclusions selected for false-negative audit.
+
+A separate post-run access audit found a frozen lawful public full-document
+location for 31 of the 80 records. The remaining 49 are marked `NO`, meaning
+public full text was not confirmed; this does not test university subscription
+access and is never an exclusion reason.
+
+Build, run, and evaluate the fresh validation with:
+
+```bash
+python step_5/build_prompt_v6_validation.py
+python step_5/run_prompt_v6_fresh_validation.py \
+  --env-file /path/to/.env.md \
+  --max-tokens 6000 \
+  --thinking enabled
+python step_5/audit_prompt_v6_fresh_access.py
+python step_5/evaluate_prompt_v6_fresh_validation.py
 ```
 
 Run and evaluate v5 with:

@@ -1,0 +1,31 @@
+{
+  "rows": 80,
+  "unique_record_ids": 80,
+  "unique_corpus_ids": 80,
+  "selection_seed": "stage5-prompt-v6-independent-validation-20260817",
+  "targets": {
+    "DEEPCOLD_RESPONSE": 30,
+    "WARM_TROPICAL_HARD_NEGATIVE": 25,
+    "DEEPCOLD_CONTEXT_OR_CITATION": 15,
+    "AMBIGUOUS_TITLE_ONLY": 10
+  },
+  "selected_by_stratum": {
+    "DEEPCOLD_CONTEXT_OR_CITATION": 15,
+    "WARM_TROPICAL_HARD_NEGATIVE": 25,
+    "DEEPCOLD_RESPONSE": 30,
+    "AMBIGUOUS_TITLE_ONLY": 10
+  },
+  "candidate_pool_by_stratum": {
+    "DEEPCOLD_RESPONSE": 112,
+    "WARM_TROPICAL_HARD_NEGATIVE": 665,
+    "DEEPCOLD_CONTEXT_OR_CITATION": 183,
+    "AMBIGUOUS_TITLE_ONLY": 111
+  },
+  "prior_record_ids_excluded": 445,
+  "overlap_with_prior_sets": 0,
+  "normalized_title_overlap_with_prior_sets": 0,
+  "doi_overlap_with_prior_sets": 0,
+  "human_labels_loaded": false,
+  "prior_model_decisions_loaded": false,
+  "model_input_contains_category_columns": false
+}

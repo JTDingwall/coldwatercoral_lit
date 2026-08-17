@@ -1,0 +1,42 @@
+{
+  "run_id": "prompt-v6-fresh-deepseek-20260817",
+  "created_at": "2026-08-17T21:50:09.681549+00:00",
+  "mode": "prompt_v6_fresh_validation_screening",
+  "provider": "DeepSeek",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-v4-flash",
+  "api_key_written": false,
+  "input_file": "step_5/calibration/prompt_v6_fresh_validation_model_input.csv",
+  "input_sha256": "7010bbf5d31d3fc40e62f457fe4f4eb83ddaf57b7fe19f6f08bca5a4574c66fe",
+  "input_rows_selected": 80,
+  "human_labels_loaded_for_requests": false,
+  "prior_model_decisions_loaded_for_requests": false,
+  "benchmark_key_loaded": false,
+  "forbidden_columns_present": false,
+  "full_text_included": false,
+  "prompt_file": "step_5/prompts/title_abstract_screening_v6.md",
+  "prompt_sha256": "ef8a27eb7cf1c28c9a596d9c753381d76f03611c2b54ededb4cd5ba9dfe04161",
+  "schema_file": "step_5/schemas/screening_output_v5.schema.json",
+  "schema_sha256": "4fdcde1ce2844011e34c0842413d112fee51878ca2f2379a5089e232033056f6",
+  "parameters": {
+    "temperature": 0,
+    "max_tokens": 6000,
+    "thinking": "enabled",
+    "response_format": "json_object",
+    "workers": 4,
+    "max_retries": 3,
+    "timeout_seconds": 180
+  },
+  "external_transfer_authorization": "One DeepSeek prompt-v6 validation run on the fresh validation records using titles, abstracts/snippets, and bibliographic metadata only",
+  "status": "completed",
+  "completed_at": "2026-08-17T21:55:08.671430+00:00",
+  "succeeded_rows": 80,
+  "failed_rows": 0,
+  "failed_calibration_record_ids": [],
+  "usage": {
+    "prompt_tokens": 192048,
+    "completion_tokens": 92790,
+    "total_tokens": 284838
+  },
+  "parsed_decisions_sha256": "b674838e4a9c432a0723eafd593f39ca86bd35f85be6258e41403b3f55d9ca8a"
+}

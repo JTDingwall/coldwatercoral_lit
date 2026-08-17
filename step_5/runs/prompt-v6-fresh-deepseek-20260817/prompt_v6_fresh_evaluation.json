@@ -1,0 +1,69 @@
+{
+  "split": "PROMPT_V6_FRESH_VALIDATION",
+  "rows": 80,
+  "all_model_responses_valid": true,
+  "classification_counts": {
+    "CORE_INCLUDE": 18,
+    "TRANSFERABLE_MECHANISM": 0,
+    "CITATION_CHAIN_CANDIDATE": 15,
+    "UNCERTAIN": 2,
+    "EXCLUDE": 45
+  },
+  "counts_by_selection_stratum": {
+    "AMBIGUOUS_TITLE_ONLY": {
+      "CORE_INCLUDE": 1,
+      "TRANSFERABLE_MECHANISM": 0,
+      "CITATION_CHAIN_CANDIDATE": 0,
+      "UNCERTAIN": 2,
+      "EXCLUDE": 7
+    },
+    "DEEPCOLD_CONTEXT_OR_CITATION": {
+      "CORE_INCLUDE": 1,
+      "TRANSFERABLE_MECHANISM": 0,
+      "CITATION_CHAIN_CANDIDATE": 5,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 9
+    },
+    "DEEPCOLD_RESPONSE": {
+      "CORE_INCLUDE": 16,
+      "TRANSFERABLE_MECHANISM": 0,
+      "CITATION_CHAIN_CANDIDATE": 10,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 4
+    },
+    "WARM_TROPICAL_HARD_NEGATIVE": {
+      "CORE_INCLUDE": 0,
+      "TRANSFERABLE_MECHANISM": 0,
+      "CITATION_CHAIN_CANDIDATE": 0,
+      "UNCERTAIN": 0,
+      "EXCLUDE": 25
+    }
+  },
+  "critical_policy_checks": {
+    "transferable_mechanism_rows": 0,
+    "all_25_tropical_hard_negatives_excluded": true,
+    "tropical_core_or_transferable_rows": 0,
+    "deepcold_response_stratum_excludes_for_audit": 4,
+    "all_core_includes_trusted_by_user_policy": true
+  },
+  "human_review": {
+    "status": "REQUIRED",
+    "rows": 21,
+    "citation_chain_candidates": 15,
+    "uncertain": 2,
+    "deepcold_response_exclusions": 4,
+    "instructions": "Fill only final_category and reviewer_note. Keep UNCERTAIN when the supplied text is insufficient."
+  },
+  "access_audit": {
+    "yes": 31,
+    "no": 49,
+    "meaning": "YES confirms a frozen lawful public full-document location; NO does not test university subscription access."
+  },
+  "production_screening_approved": false,
+  "production_hold_reason": "The focused 21-record human review must be completed before prompt v6 can be frozen for production.",
+  "outputs": {
+    "classifications": "prompt_v6_fresh_classifications.csv",
+    "human_review": "prompt_v6_fresh_human_review.csv",
+    "human_review_compact": "prompt_v6_fresh_human_review_compact.csv"
+  }
+}
