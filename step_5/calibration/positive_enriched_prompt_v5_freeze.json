@@ -1,0 +1,60 @@
+{
+  "status": "COMPLETED_REVIEW_REQUIRED",
+  "freeze_date": "2026-08-17",
+  "prompt_file": "step_5/prompts/title_abstract_screening_v5.md",
+  "prompt_sha256": "9be31393b3efc5a3589213723f832b2dcd5aabe39602c425f933535064a5b4be",
+  "schema_file": "step_5/schemas/screening_output_v5.schema.json",
+  "schema_sha256": "4fdcde1ce2844011e34c0842413d112fee51878ca2f2379a5089e232033056f6",
+  "model_input_file": "step_5/calibration/positive_enriched_validation_model_input_v5.csv",
+  "model_input_sha256": "2ffc3d5684b2827bebdcc7164d83388fc06d6b012aaa7dd9e7c158f6787d6a95",
+  "access_audit_file": "step_5/calibration/positive_enriched_validation_access.csv",
+  "access_audit_sha256": "69ddbf232ef6adcdfd44f294f034b05c30b42ad1a1c32782d4c4c7dcc1c77ced",
+  "rows": 36,
+  "external_transfer_authorized": true,
+  "external_transfer_authorization_scope": "Revised DeepSeek classification run on the same 36 positive-enriched validation records using their titles, abstracts/snippets, bibliographic metadata, and public-access status",
+  "external_transfer_authorization_date": "2026-08-17",
+  "authorization_basis": "The user explicitly requested that the DeepSeek classification be updated under the revised taxonomy and allowed longer reasoning.",
+  "policy_changes": {
+    "core_include_protected_after_blinded_model_run": true,
+    "transferable_mechanism_use": "SPARING_CLOSE_TRAIT_ANALOGUES_ONLY",
+    "citation_chain_candidate_added": true,
+    "access_column_added": true,
+    "access_yes": 13,
+    "access_no": 23,
+    "access_caveat": "Public full-text status is carried from the frozen Stage 4 access discovery. Direct publisher rechecking was blocked in the current runtime; publisher landing pages alone count as NO."
+  },
+  "requested_parameters": {
+    "temperature": 0,
+    "max_tokens": 6000,
+    "thinking": "enabled",
+    "response_format": "json_object"
+  },
+  "budget": {
+    "authorized_usd": 50,
+    "several_hundred_thousand_tokens_acceptable": true,
+    "instruction_date": "2026-08-17"
+  },
+  "run": {
+    "run_id": "positive-enriched-deepseek-v5-20260817",
+    "status": "completed",
+    "succeeded_rows": 36,
+    "failed_rows": 0,
+    "usage": {
+      "prompt_tokens": 84308,
+      "completion_tokens": 43904,
+      "total_tokens": 128212
+    },
+    "run_manifest_sha256": "419bba8fd6a58f7880787163c622114e67db5a1c415719c7e0d39ea7f779ea56",
+    "parsed_decisions_sha256": "d8d7ad81837a42d18c695f5eab1e3d712b8eabe66e41be0560253e6b7604d90a",
+    "evaluation_sha256": "3180f49b0f811823e5e2503ef4a9e48918d23e09c7f8a94c1b9653a3275c98f9",
+    "classifications_sha256": "045e94faa0bb4fb8918fd7973d3add84f809a2e4d886a707f053b7c99fa29bf7"
+  },
+  "classification_counts": {
+    "CORE_INCLUDE": 13,
+    "TRANSFERABLE_MECHANISM": 4,
+    "CITATION_CHAIN_CANDIDATE": 2,
+    "UNCERTAIN": 6,
+    "EXCLUDE": 11
+  },
+  "next_gate": "Trust all 13 CORE_INCLUDE decisions. Review the four transferable, two citation-chain, and six uncertain records before freezing prompt v5 for production."
+}

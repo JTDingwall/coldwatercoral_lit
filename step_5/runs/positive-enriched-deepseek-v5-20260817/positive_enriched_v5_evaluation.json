@@ -1,0 +1,44 @@
+{
+  "split": "POSITIVE_ENRICHED_VALIDATION_V5",
+  "rows": 36,
+  "identifier_sets_reconcile": true,
+  "classification_counts": {
+    "CORE_INCLUDE": 13,
+    "TRANSFERABLE_MECHANISM": 4,
+    "CITATION_CHAIN_CANDIDATE": 2,
+    "UNCERTAIN": 6,
+    "EXCLUDE": 11
+  },
+  "access_counts": {
+    "NO": 23,
+    "YES": 13
+  },
+  "core_include_policy": {
+    "trusted_without_additional_adjudication": true,
+    "core_rows": 13,
+    "core_with_access_yes": 5,
+    "core_with_access_no": 8
+  },
+  "noncore_review": {
+    "transferable_mechanism_rows": 4,
+    "citation_chain_candidate_rows": 2,
+    "uncertain_rows": 6,
+    "review_queue_rows": 12
+  },
+  "lawful_retrieval_queue_rows": 15,
+  "qa": {
+    "complete_36": true,
+    "one_category_per_record": true,
+    "access_present_for_every_record": true,
+    "all_core_includes_trusted": true,
+    "legacy_v4_accuracy_gate_applicable": false,
+    "production_screening_approved": false
+  },
+  "production_hold_reason": "Prompt v5 changes the taxonomy and transferability policy. The 12 non-core edge cases require review before the prompt is frozen for production; legacy v4 human labels are not a valid accuracy denominator for the new category system.",
+  "access_caveat": "access=YES uses frozen public full-text discovery status. Direct publisher rechecking was blocked in this runtime. access=NO means no lawful public full text was confirmed, not that the source is irrelevant or unavailable through an institutional library.",
+  "outputs": {
+    "classifications": "positive_enriched_v5_classifications.csv",
+    "review_queue": "positive_enriched_v5_review_queue.csv",
+    "lawful_retrieval_queue": "positive_enriched_v5_lawful_retrieval_queue.csv"
+  }
+}

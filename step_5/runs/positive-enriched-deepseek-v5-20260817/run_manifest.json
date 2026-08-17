@@ -1,0 +1,42 @@
+{
+  "run_id": "positive-enriched-deepseek-v5-20260817",
+  "created_at": "2026-08-17T21:19:57.681254+00:00",
+  "mode": "positive_enriched_validation_screening_v5",
+  "provider": "DeepSeek",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-v4-flash",
+  "api_key_written": false,
+  "input_file": "step_5/calibration/positive_enriched_validation_model_input_v5.csv",
+  "input_sha256": "2ffc3d5684b2827bebdcc7164d83388fc06d6b012aaa7dd9e7c158f6787d6a95",
+  "input_rows_selected": 36,
+  "human_labels_loaded_for_requests": false,
+  "prior_model_decisions_loaded_for_requests": false,
+  "benchmark_key_loaded": false,
+  "forbidden_columns_present": false,
+  "access_metadata_included": true,
+  "prompt_file": "step_5/prompts/title_abstract_screening_v5.md",
+  "prompt_sha256": "9be31393b3efc5a3589213723f832b2dcd5aabe39602c425f933535064a5b4be",
+  "schema_file": "step_5/schemas/screening_output_v5.schema.json",
+  "schema_sha256": "4fdcde1ce2844011e34c0842413d112fee51878ca2f2379a5089e232033056f6",
+  "parameters": {
+    "temperature": 0,
+    "max_tokens": 6000,
+    "thinking": "enabled",
+    "response_format": "json_object",
+    "workers": 4,
+    "max_retries": 3,
+    "timeout_seconds": 180
+  },
+  "external_transfer_authorization": "Revised DeepSeek classification run on the same 36 positive-enriched validation records using their titles, abstracts/snippets, bibliographic metadata, and public-access status",
+  "status": "completed",
+  "completed_at": "2026-08-17T21:22:45.492284+00:00",
+  "succeeded_rows": 36,
+  "failed_rows": 0,
+  "failed_calibration_record_ids": [],
+  "usage": {
+    "prompt_tokens": 84308,
+    "completion_tokens": 43904,
+    "total_tokens": 128212
+  },
+  "parsed_decisions_sha256": "d8d7ad81837a42d18c695f5eab1e3d712b8eabe66e41be0560253e6b7604d90a"
+}

@@ -185,6 +185,44 @@ transferable recall was 88.2%, and one human-labelled relevant record was
 classified `EXCLUDE`. Production remains blocked. Eleven priority disagreements
 require human adjudication before any further prompt revision or production run.
 
+## Conservative trait-focused prompt v5
+
+Prompt v5 implements the revised substantive policy: deep-sea and cold-water
+coral/sponge trait effects are the centre of the evidence set;
+`TRANSFERABLE_MECHANISM` is reserved for unusually close organism-level trait
+analogues; and `CITATION_CHAIN_CANDIDATE` is available for directly relevant
+deep/cold sediment sources that do not themselves describe an eligible response
+but are justified reference-mining leads. All v5 `CORE_INCLUDE` decisions are
+trusted without further adjudication.
+
+The authorized v5 run completed on 2026-08-17 with 36/36 valid responses and no
+failures. DeepSeek thinking was enabled with a 6,000-token response ceiling. The
+run used 128,212 tokens and produced 13 `CORE_INCLUDE`, four
+`TRANSFERABLE_MECHANISM`, two `CITATION_CHAIN_CANDIDATE`, six `UNCERTAIN`, and
+11 `EXCLUDE` decisions. The four transferable, two citation-chain, and six
+uncertain records form the non-core review queue. Production remains blocked
+until that queue is reviewed and prompt v5 is explicitly frozen.
+
+The v5 access audit adds an `access` column to every validation record. `YES`
+means the frozen Stage 4 discovery workflow identified a public PDF or likely
+full-document location; `NO` means lawful public full text was not confirmed.
+Publisher landing pages alone do not count. `NO` is never an exclusion reason:
+relevant records enter the lawful-retrieval queue for institutional-library,
+interlibrary-loan, repository, or author-copy follow-up. Sci-Hub and similar
+access-control-bypass services are not used.
+
+Run and evaluate v5 with:
+
+```bash
+python step_5/audit_positive_enriched_access.py
+python step_5/run_positive_enriched_validation_v5.py \
+  --env-file /path/to/.env.md \
+  --max-tokens 6000 \
+  --thinking enabled
+python step_5/evaluate_positive_enriched_v5.py \
+  --predictions step_5/runs/<v5-run-id>/parsed_decisions.csv
+```
+
 Do not run the locked validation split until the development prompt has been
 reviewed and frozen. Do not run production screening until the full acceptance
 gate in `screening_protocol.md` is satisfied.
@@ -193,7 +231,10 @@ gate in `screening_protocol.md` is satisfied.
 
 - `screening_protocol.md`: frozen decision logic, validation plan, and stop rules.
 - `prompts/title_abstract_screening_v1.md`: versioned title/abstract prompt.
+- `prompts/title_abstract_screening_v5.md`: conservative trait-focused prompt
+  with the citation-chain category.
 - `schemas/screening_output.schema.json`: required structured output contract.
+- `schemas/screening_output_v5.schema.json`: five-category v5 output contract.
 - `input_manifest.json`: frozen Stage 4 lineage.
 
 Use GitHub issue #8 as the sequenced Stage 5 tracker.
